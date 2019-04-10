@@ -1,0 +1,155 @@
+@charset "utf-8";
+/* CSS Document */
+/*全局样式*/
+body { font-family:"微软雅黑"; font-size:12px; color:#333;}
+* { margin:0px; padding:0px; list-style:none;}
+.clear { clear:both;}
+a { color:#333; text-decoration:none;}
+a:hover { color:#0069ad; text-decoration: none;}
+.fl { float:left;}
+.fr { float:right; }
+ul { list-style:none; margin:0px; padding:0px;}
+img { border:0px; max-width:100%;}
+.dbgao { height:80px;}
+
+
+
+
+/*底部*/
+.lbottom { width:100%; padding:10px 0px; font-size:12px; color:#666; text-align:center; line-height:20px; border-top:1px solid #d7d8d8; margin-top:30px;}
+
+
+
+
+关于我们
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;vertical-align:baseline;outline:0;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+html{overflow-y:scroll}
+/* page structure */
+header{display:block;width:100%;height:55px;text-align:center;}
+header strong {font-size:20px; color:#FFF; line-height:55px;color: black; font-weight: 200;}
+/*.menubtn{position:relative;z-index:101;text-decoration:none;background-image:url(../images/nav_btn.png);background-position: center center; background-repeat:no-repeat; width:30px; height:55px; float:right;  margin-right:10px;}*/
+a.fanhui { width:20px; height:55px; float:left; margin-left:10px; background:url(../images/back.png) no-repeat center;}
+
+.zymain { width:100%; height:auto;}
+.zybt { width:100%;margin:10px 0px; }
+
+
+
+.singer_r_img {
+	display: block;
+	line-height: 45px;
+	background: url(../images/sing_week.gif) right 2px no-repeat;
+	vertical-align: middle;
+	margin-bottom: -10px;
+	text-decoration: none;
+}
+
+.singer_r_img:hover {
+	background-position: right -53px;
+	text-decoration: none;
+}
+
+.singer_r_img span {
+	margin-left: 14px;
+	font-size: 40px;
+	font-family:  "微软雅黑";
+	font-weight: 700;
+	color: #165379;
+}
+
+.singer_r_img.current {
+	background: url(images/sing_sing.gif) no-repeat 0 2px;
+	border: 0;
+	text-decoration: none;
+}
+
+
+.sign_succ_calendar_title {
+	text-align: center;
+	/*width: 398px;*/
+	border-left: 1px solid #e3e3e3;
+	border-right: 1px solid #e3e3e3;
+	background: #fff;
+}
+
+.sign_main {
+	/*width: 400px;*/
+/**background-color: #FBFEFE;**/
+	border-top: 1px solid #e3e3e3;
+	font-family: "Microsoft YaHei",SimHei;
+	display: block;
+}
+
+.calendar_month_span {
+	display: inline;
+	line-height: 60px;
+	font-size: 20px;
+	color: #656565;
+	letter-spacing: 2px;
+	font-weight: bold;
+	font-weight: 200;
+}
+
+.sign_equal {
+	display:table;
+	border-collapse:separate;
+	width: 100%;
+}
+
+.sign_row {
+	display:table-row;
+	
+	
+}
+.sign_row div {
+	display:table-cell;
+	width:14.3%;
+	border-top: 1px solid #e3e3e3;
+	/*border-bottom: 1px solid #e3e3e3;*/
+	border-left: 1px solid #e3e3e3;
+	height: 60px;
+    text-align: center;
+    line-height: 60px;
+   
+}
+.sign_row .bold{
+	font-weight: bold;
+	color: #2576C8;
+}
+.sign_row div:last-child { 
+	border-right: 1px solid #e3e3e3;
+	
+}
+.sign_equal .sign_row:last-child div{
+	border-bottom: 1px solid #e3e3e3;
+	
+}
+.sign_equal .on {
+	background: url(../images/sign_have.gif) no-repeat center;
+}
+
+.sign_contener,.sign_contener:visited {
+	line-height: 30px;
+	background: #00a0e9;
+	border: none;
+	color: white;
+	border-radius: 30px;
+	padding: 0 10px;
+	font-size: 26px;
+}
+
+.sign_contener:hover{
+	background-color: red;
+} 
+
+
+
+
+
+
+
+
+
+
+
+

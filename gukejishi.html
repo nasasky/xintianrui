@@ -1,0 +1,325 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>顾客计时</title>
+<link rel="stylesheet" type="text/css" href="css/fuwujishi.css"/>
+<link rel="stylesheet" type="text/css" href="css/dianpuxinxi.css"/>
+<link rel="stylesheet" href="css/yuangongliebiao.css" />
+<script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.7.2.min.js"></script>
+<link rel="stylesheet" href="css/stylex.css">
+<link rel="stylesheet" href="css/reset.css">
+<script type="text/javascript">
+$(function(){
+$(":checkbox").click(function(){
+if($(this).attr("checked")!=undefined)
+{
+$(this).siblings().attr("checked",false);
+$(this).attr("checked",true);
+}
+});
+});
+
+</script>
+
+
+<style>
+.fwa4 {
+    float: left;
+    margin-top: 1rem;
+    height: 2rem;
+    border-radius: 10px;
+    width: 30%;
+    margin-left: 15%;
+    border: 0rem;
+}
+
+.yuanzc {
+    float: right;
+    margin-right: 0.25rem;
+    width: 5rem;
+    height: 100%;
+    margin-top: 0rem;
+    
+}
+.yuanzca {
+    float: left;
+    width: 100%;
+    height:100%;
+    color: #2476C8;
+    border-radius: 0.25rem;
+    border: 0.05rem solid #2476C8;
+    font-size: 0.65rem;
+    line-height: 1.25rem;
+    text-align: center;
+}
+
+.yztx2{
+	width: 90%;
+	margin-left: 5%;
+	height: auto;
+	margin-bottom: 1rem;
+	margin-top: 0.5rem;
+	line-height: 0.9rem;
+}
+
+</style>
+</head>
+<body onload="init();">
+<div id="pgcontainer">
+
+  <!--头部的开始-->
+  <header> 
+  <a class="fanhui" href="#"></a>
+  <strong>顾客计时</strong>
+  <a href="#" class="menubt"></a> 
+    
+  </header>
+  <!--头部的结束-->
+    <div class="gk">
+	  <a>
+	  	<h1>本次由张某技师为您服务，感谢您对睿儿理疗的支持</h1>
+	  </a>
+	  </div>
+  <!--主题内容的开始-->
+  <div class="zymain">
+    <div class="zybt">
+    
+        	<div class="fwa">
+						
+				<div class="zw">
+    	 	<div class="zw1">
+    	 		<a style="font-size: 1.1rem;font-weight: 540;text-align: center;">服务倒计时</a>
+    	 		<div class="zws" >
+    	 			<div class="zwsa">分钟</div>
+    	 			<div class="zwsb">秒</div>
+    	 		</div>
+    	 	<div class="gktime">
+    	 		<a><div id="showDiv" style="font-size: 1.8rem;margin-top: 1rem;"></div></a>
+    	 	</div>
+    	 	</div>
+    	 </div>
+							
+							
+				
+				
+      <div class="zw3">
+      	<a><h1>开始服务时间：15:00</h1></a>
+        <a><h2>结束服务时间：15:00</h2></a>
+      </div>
+
+		<div class="fwa4">
+		<div class="yuanzc">
+				<div class="box">
+				<a href="javascript:;" class="flipInX">
+				<div class="yuanzca" style="float: right;">分配</div>
+				</a>
+				</div>
+	   </div>
+	    </div>
+			
+		<div class="fwa4">
+		<div class="yuanzc">
+				<div class="boxx">
+				<a href="javascript:;" class="flipInX">
+				<div class="yuanzca" style="float: right;">分配</div>
+				</a>
+				</div>
+	   </div>
+	   </div>
+			
+			
+			</div>	
+				
+				
+				
+	     <div class="gkb">
+	    		<a><h1>以下您本次理疗的照片，是否同意公开显示？</h1></a>	
+	    		<div class="gkt" >
+	    		<div class="gkt1">
+	    			<img src="images/gk.png" style="width: 100%;height: 100%;" />
+	    		</div>
+	    		<div class="gkt2">
+	    			<img src="images/gk.png" style="width: 100%;height: 100%;" />
+	    		</div>
+	    		<div class="gkt2">
+	    			<img src="images/gk.png" style="width: 100%;height: 100%;" />
+	    		</div>
+	    		</div>
+	    		
+	    		
+	    		
+	    		<div class="gukaxx" style="width: 90%;margin-left: 5%;float: left;height: 4rem;margin-top: 6rem;margin-bottom: 0.5rem;border: 0.25rem;border: 0.05rem solid #EBEBEB;">
+	    			<textarea style="border: 0rem;width: 100%;height: 100%;font-size: 0.65rem;" placeholder="请你文字说明"></textarea>
+	    		</div>
+	    		<div class="gkbutton">
+	    			<div class="dianpulei">
+              		<input type="checkbox" id="checkbox-2-1"  class="regular-checkbox big-checkbox" name="time" /><label for="checkbox-2-1" style="margin-left: 0.5rem;line-height: 1rem;"></label>
+              		<span style="line-height: 1rem;font-size: 0.7rem;margin-left: 0.25rem;">同意</span>
+		              <input type="checkbox" id="checkbox-2-2"  class="regular-checkbox big-checkbox" name="time"/><label for="checkbox-2-2" style="margin-left: 0.5rem;"></label>
+		              <span style="padding: 0; font-size: 0.7rem;margin-left: 0.25rem;">不同意</span>
+		              </div>
+	    		</div>
+	    		</div>
+    
+    <!--<div class="gukb">
+    	发表评价
+    </div>-->
+    </div>
+    
+  </div>
+  <div class="di-button" style="width: 90%;float: left;margin-left: 5%;height: 2rem;margin-top: 0.5rem;">
+  <button style="float: left;background: #2476C8; border-radius:0.5rem ; width: 100%;height: 100%;color: white;text-align: center;border: 0;font-size: 0.75rem;">
+  确定
+  </button>
+  </div>
+  
+  
+ <div style="width: 100%;height: 3rem;float: left;"></div>
+
+</div>
+
+
+
+
+<div id="dialogBg"></div>
+		<div id="dialog" class="animatedx" style="height: auto;">
+			<div class="dialogTopx"></div>
+				<div class="yztx2">
+					本次理疗服务结束，很感谢您使用睿儿理疗，若觉得理疗效果不错，就给我们个评价吧！！！
+
+				</div>
+				
+				<div class="yztx3">
+					<div class="yztx3a">确定</div>
+					<a href="javascript:;" class="claseDialogBtn">
+					<div class="yztx3b">取消</div>
+					</a>
+				</div>
+   </div>
+
+
+
+
+ <div id="dialogBgx"></div>
+		<div id="dialogx" class="animatedx" style="height: auto;">
+			<div class="dialogTopx"></div>
+				<div class="yztx2">
+					本次理疗服务结束，很感谢您使用睿儿理疗，若觉得理疗效果不错，就给我们个评价吧！！！
+
+				</div>
+				
+				<div class="yztx3">
+					<div class="yztx3a">确定</div>
+					<a href="javascript:;" class="claseDialogBtnx">
+					<div class="yztx3b">取消</div>
+					</a>
+				</div>
+   </div>
+		           
+		           
+<script src="js/main.js"></script> 
+
+
+</body>
+ <script>
+            var time;    
+            var showDiv=document.getElementById("showDiv");
+            var m=20;
+            var s=60;
+            function init(){
+                
+                 time=setInterval("run()",1000);
+             
+             }
+            //进行倒计时显示
+            function run(){
+                --s;
+                if(s<0){
+                    --m;
+                    s=59;
+                }
+                if(m<0){
+                    --h;
+                    m=m-1;
+                }
+                showDiv.innerHTML=m+":"+s;
+              console.log(showDiv);
+             
+               }
+       
+            
+        </script>
+        
+        
+  
+        
+<script>
+var w,h,className;
+function getSrceenWH(){
+	w = $(window).width();
+	h = $(window).height();
+	$('#dialogBg').width(w).height(h);
+}
+
+window.onresize = function(){  
+	getSrceenWH();
+}  
+$(window).resize();  
+
+$(function(){
+	getSrceenWH();
+	
+	//显示弹框
+	$('.box a').click(function(){
+		className = $(this).attr('class');
+		$('#dialogBg').fadeIn(300);
+		$('#dialog').removeAttr('class').addClass('animated '+className+'').fadeIn();
+	});
+	
+	//关闭弹窗
+	$('.claseDialogBtn').click(function(){
+		$('#dialogBg').fadeOut(300,function(){
+			$('#dialog').addClass('bounceOutUp').fadeOut();
+		});
+	});
+});
+
+
+
+
+var w,h,className;
+function getSrceenWH(){
+	w = $(window).width();
+	h = $(window).height();
+	$('#dialogBgx').width(w).height(h);
+}
+
+window.onresize = function(){  
+	getSrceenWH();
+}  
+$(window).resize();  
+
+$(function(){
+	getSrceenWH();
+	
+	//显示弹框
+	$('.boxx a').click(function(){
+		className = $(this).attr('class');
+		$('#dialogBgx').fadeIn(300);
+		$('#dialogx').removeAttr('class').addClass('animatedx '+className+'').fadeIn();
+	});
+	
+	//关闭弹窗
+	$('.claseDialogBtnx').click(function(){
+		$('#dialogBgx').fadeOut(300,function(){
+			$('#dialogx').addClass('bounceOutUp').fadeOut();
+		});
+	});
+});
+
+</script>
+
+</html>

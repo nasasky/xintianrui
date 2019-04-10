@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>退款弹框</title>
+<link rel="stylesheet" type="text/css" href="css/zhifushibai.css"/>
+
+</head>
+<body>
+<div id="pgcontainer">
+
+  <!--头部的开始-->
+  <header> 
+  <a class="fanhui" href="tuikuangshenqing.html"></a>
+  
+  <a href="#" class="menubtn"></a> 
+    
+  </header>
+  <!--头部的结束-->
+  
+  <!--主题内容的开始-->
+  <div class="zymain">
+    <div class="zybt">
+    	   
+
+				
+					<div class="tijiao" style="margin-top: 1rem; width: 90%;margin-left: 5%;height: 3rem;float: left;clear: both;display: block;">
+                         <div class="shibaia1" style="width: 85%;margin-left: 7.5%;height:1.7rem; text-align: center;">
+                         	<div class="shibaia2" style="width:2.7rem;height: 2.7rem;margin: auto;">
+                         		<img src="images/true.png"  style="width: 100%;height: 100%;"/>
+                         	</div>
+                           <h1 style="font-size:0.85rem;color: black;margin-top: 1rem;font-weight: 400;">退款申请已提交，等待审核中</h1>
+                         	</div>
+                         
+                         <div class="button" style="width: 90%;margin-left: 5%;float: left;height: 2rem;margin-top: 4.5rem;">
+                         	
+                         	<a href="#">
+                         	<div class="jrx">
+                          <div id="jq22" class="btn">个人中心</div>
+                          </div>
+                          </a>
+                          
+                           <a href="#">
+                           <div class="jrx1">
+    	                     <div id="jq24" class="btn2">返回首页</div>
+                           </div>
+                         	 </a>
+                         	
+                         </div>
+					</div>	 
+				
+				
+ 
+    </div>
+    
+  </div>
+
+</div>
+
+<script src="js/jquery-1.8.3.min.js"></script>
+<script>
+    $(function () {
+        $('#jq22').click(function () {
+            $('#jq22').addClass('bounce');
+            setTimeout(function(){
+                $('#jq22').removeClass('bounce');
+            }, 1000);
+        });
+    });
+    
+    $(function(){
+    	$('#jq24').click(function(){
+    		$('#jq24').addClass('bounce2');
+    		setTimeout(function(){
+    			$('#jq24').removeClass('bounce2');
+    			
+    		},1000);
+    	});
+    });
+</script>
+</body>
+
+
+</html>

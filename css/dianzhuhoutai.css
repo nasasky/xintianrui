@@ -1,0 +1,1579 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+/*店主后台全局样式*/
+
+body {
+	font-family: "微软雅黑";
+	font-size: 12px;
+	color: #333;
+	background: #F5F4F9;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+html {
+	font-size: 20px;
+}
+
+@media only screen and (min-width: 401px) {
+	html {
+		font-size: 25px !important;
+	}
+}
+
+@media only screen and (min-width: 428px) {
+	html {
+		font-size: 26.75px !important;
+	}
+}
+
+@media only screen and (min-width: 481px) {
+	html {
+		font-size: 30px !important;
+	}
+}
+
+@media only screen and (min-width: 569px) {
+	html {
+		font-size: 35px !important;
+	}
+}
+
+@media only screen and (min-width: 641px) {
+	html {
+		font-size: 40px !important;
+	}
+}
+
+.clear {
+	clear: both;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+a {
+	font-size: 0.7rem;
+}
+
+img {
+	border: 0px;
+	max-width: 100%;
+}
+
+.dbgao {
+	height: 80px;
+}
+
+关于我们 a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	outline: 0;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+html {
+	overflow-y: scroll;
+	text-decoration: none;
+}
+
+
+/* page structure */
+
+header {
+	display: block;
+	width: 100%;
+	height: 55px;
+	text-align: center;
+}
+
+header strong {
+	font-size: 1rem;
+	color: #FFF;
+	line-height: 55px;
+	color: black;
+	font-weight: 100;
+	margin-left: 1%;
+}
+
+
+/*.menubtn {
+	position: relative;
+	z-index: 101;
+	text-decoration: none;
+	background-image: url(../images/nav.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 55px;
+	float: right;
+	margin-right: 10px;
+}*/
+
+
+/*.menubt {
+	position: relative;
+	z-index: 101;
+	text-decoration: none;
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 55px;
+	float: right;
+	margin-right: 10px;
+}*/
+
+
+/*
+a.fanhui {
+	text-decoration: none;
+	width: 20px;
+	height: 55px;
+	float: left;
+	margin-left: 10px;
+	background: url(../images/back.png) no-repeat center;
+}*/
+
+.zymain {
+	width: 100%;
+	height: auto;
+}
+
+.zybt {
+	width: 100%;
+	height: 100%;
+	margin: 10px 0px;
+}
+
+.dzhu {
+	width: 100%;
+	height: 7rem;
+	background: white;
+}
+
+.dzhua {
+	width: 90%;
+	margin-left: 5%;
+	float: left;
+	height: 1.5rem;
+	border-bottom: 0.05rem solid #EBEBEB;
+}
+
+.dzhua h1 {
+	float: left;
+	font-size: 0.7rem;
+	font-weight: 400;
+	color: black;
+	line-height: 1.5rem;
+}
+
+.dzhua button {
+	float: right;
+	height: 1rem;
+	width: 2rem;
+	border: 0.05rem solid #EBEBEB;
+	background: white;
+	border-radius: 0.25rem;
+	margin-top: 0.25rem;
+}
+
+.dzhua1 {
+	width: 90%;
+	margin-left: 5%;
+	float: left;
+	height: 1.5rem;
+	border-bottom: 0.05rem solid #EBEBEB;
+}
+
+.dzhua1 h1 {
+	float: left;
+	font-size: 0.7rem;
+	font-weight: 400;
+	color: black;
+	line-height: 1.5rem;
+}
+
+.dz {
+	float: right;
+	width: 1rem;
+	height: 1rem;
+	margin-top: 0.25rem;
+}
+
+.dz img {
+	width: 100%;
+	height: 100%;
+}
+
+.dzt {
+	width: 100%;
+	float: left;
+	background: white;
+	font-size: 0.7rem;
+}
+
+.dzt a {
+	margin-left: 5%;
+}
+
+.dzatea {
+	width: 4rem;
+	float: left;
+	line-height: 1.5rem;
+	text-align: center;
+	height: 1.5rem;
+	font-size: 0.7rem;
+}
+
+.dzate {
+	width: 95%;
+	margin-left: 5%;
+	height: 1.5rem;
+	float: left;
+}
+
+.dzateb {
+	margin-left: 2.3rem;
+	margin-top: -0.8rem;
+	float: left;
+	width: 0.8rem;
+	height: 0.8rem;
+	float: left;
+	border: 0.05rem solid red;
+}
+
+.dzated {
+	margin-left: 2.3rem;
+	margin-top: -0.8rem;
+	float: left;
+	width: 0.8rem;
+	height: 0.8rem;
+	float: left;
+	border: 0.05rem solid #3E86CE;
+}
+
+.dzatec {
+	margin-left: 2.8rem;
+	margin-top: -0.8rem;
+	float: left;
+	width: 0.8rem;
+	height: 0.8rem;
+	float: left;
+	border: 0.05rem solid #31E636;
+}
+
+.dzateb1 {
+	margin-top: 0.25rem;
+	float: left;
+	width: 3.5rem;
+	height: 1rem;
+	float: left;
+	font-size: 0.6rem;
+}
+
+.dzateb2 {
+	margin-top: 0.25rem;
+	float: left;
+	width: 4rem;
+	height: 1rem;
+	float: left;
+	font-size: 0.6rem;
+}
+
+.dza1 {
+	width: 100%;
+	height: 1.5rem;
+	float: left;
+	background: white;
+	
+}
+
+.dza1 h1 {
+	font-size: 0.7rem;
+	float: left;
+	margin-left: 5%;
+	line-height: 1.5rem;
+	font-weight: 400;
+	color: black;
+}
+
+.dza2 {
+	width: 1rem;
+	height: 1rem;
+	float: right;
+	margin-top: 0.25rem;
+	margin-right: 0.5rem;
+}
+
+.dza2 img {
+	width: 100%;
+	height: 100%;
+}
+
+.dzc {
+	width: 100%;
+	height: 8rem;
+	
+	float: left;
+	background: white;
+}
+
+.dzc1 {
+	width: 100%;
+	float: left;
+}
+
+.dzc1 a {
+	font-size: 0.7rem;
+	float: left;
+	color: black;
+	margin-left: 4%;
+	margin-top: 0.5rem;
+	font-weight: 400;
+}
+.contentxy{
+	width: 100%;
+	height: 100%;
+	float: left;
+	position: relative;
+	
+}
+.spaexa{
+	width: 100%;
+	float: left;
+	height: 4rem;
+	position: relative;
+}
+.spaexa1{
+	width: 13.8rem;
+	position: absolute;
+	margin: auto;
+	left: 0;
+    right: 0;
+   
+}
+.contentya{
+	width: 90%;
+	position: absolute;
+	margin: auto;
+	left: -2%;
+	right: 0;
+	height: 100%;
+}
+.dzc2 {
+	width: 45%;
+	margin-left: 5%;
+	height: 3rem;
+	float: left;
+	border-bottom: 0.05rem solid #EBEBEB;
+	border-right: 0.05rem solid #EBEBEB;
+	position: relative;
+}
+
+.dzc3 {
+	width: 45%;
+	height: 3rem;
+	float: right;
+	margin-right: 5%;
+	border-bottom: 0.05rem solid #EBEBEB;
+	position: relative;
+}
+
+.dzc4 {
+	width: 45%;
+	height: 3rem;
+	float: left;
+	margin-left: 5%;
+	border-right: 0.05rem solid #EBEBEB;
+	position: relative;
+}
+
+.dzc5 {
+	width: 45%;
+	height: 3rem;
+	float: right;
+	margin-right: 5%;
+	position: relative;
+}
+
+.dzcw {
+	width: 5rem;
+	height: 1.5rem;
+	float: left;
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 0.75rem;
+}
+
+.dzcw a {
+	font-size: 0.7rem;
+	color: black;
+	float: left;
+}
+
+.dzd {
+	width: 100%;
+	height: 13rem;
+	float: left;
+	margin-top: 0.5rem;
+	background: white;
+	position: relative;
+}
+
+.dzd1 a {
+	font-size: 0.7rem;
+	color: black;
+	float: left;
+	margin-left: 4%;
+	margin-top: 0.5rem;
+}
+
+.dzd2 {
+	width: 90%;
+	height: 4rem;
+	margin-left: 5%;
+	max-width: 640px;
+	float: left;
+	position: absolute;
+	margin: auto;
+	right: 0;
+	left: 0;
+	border-bottom: 0.05rem solid #EBEBEB;
+	top: 2rem;
+}
+
+.dzd3 {
+	width: 3.3rem;
+	height: 1.5rem;
+	float: left;
+}
+
+.dzd3 a {
+	line-height: 1.5rem;
+}
+
+.dzd4 {
+	width: 3.3rem;
+	height: 1.5rem;
+	float: left;
+	margin-left: 0.4rem;
+	line-height: 1.5rem;
+}
+
+.dzd5 {
+	width: 3.3rem;
+	height: 1.5rem;
+	float: left;
+	line-height: 1.5rem;
+}
+
+.dzd6 {
+	width: 3.3rem;
+	height: 1.5rem;
+	float: left;
+	margin-left: 0.4rem;
+	line-height: 1.5rem;
+}
+
+button {
+	width: 1.5rem;
+	height: 1rem;
+	background: white;
+	border: 0.05rem solid #C4C4C4;
+	border-radius: 0.25rem;
+	font-size: 0.7rem;
+	margin-left: 0.05rem;
+}
+
+.dzf {
+	float: left;
+	width: 100%;
+	margin-top: 0.5rem;
+}
+
+.dzf a {
+	font-size: 0.7rem;
+	color: black;
+	float: left;
+	margin-left: 4%;
+	margin-top: 4.5rem;
+}
+
+.dzg {
+	width: 100%;
+	height: auto;
+	margin-top: 0.5rem;
+	float: left;
+	background: white;
+}
+
+.dzg1 {
+	width: 100%;
+	float: left;
+}
+
+.dzg1 a {
+	float: left;
+	margin-top: 0.5rem;
+	margin-left: 5%;
+}
+
+.dzg2 {
+	border-radius:0.5rem;
+	background: #EEEEEE;
+	width: 80%;
+	margin-left: 5%;
+	height: 2rem;
+	margin-top: 1.5rem;
+}
+
+.dzg2 img {
+	margin-top: 0.25rem;
+	margin-left: 0.5rem;
+	
+	float: left;
+}
+.dzg2x{
+	margin-right: 3%;
+	margin-top: -2rem;
+	float: right;
+	width: 1.5rem;
+	height: 1.5rem;
+}
+.dzg2x img{
+	float: left;
+	width: 1.5rem;
+	height: 1.5rem;
+}
+.dzg2 input {
+	float: left;
+	height: 1.5rem;
+	border-radius: 0.25rem;
+	width: 70%;
+	
+	margin-top: 0.25rem;
+	margin-left: 0.5rem;
+}
+
+.dzg3 {
+	width: 2rem;
+	height: 2rem;
+	float: left;
+	margin-left: 5rem;
+	margin-top: 0.5rem;
+}
+
+.dzg3 img {
+	width: 100%;
+	height: 100%;
+}
+
+.dzg4 {
+	width: 90%;
+	height: 1rem;
+	margin-left: 5%;
+	float: left;
+	margin-top: 0.5rem;
+}
+
+.dzgbutton {
+	width: 90%;
+	height: 2rem;
+	margin-left: 5%;
+	float: left;
+	margin-top: 0.5rem;
+	border: 0.05rem solid #5091D3;
+	margin-bottom: 1rem;
+	border-radius: 0.25rem;
+	text-align: center;
+}
+
+.dzgbutton span {
+	font-size: 0.8rem;
+	color: #5091D3;
+	line-height: 2rem;
+}
+
+.dzj {
+	width: 100%;
+	float: left;
+	margin-top: 0.5rem;
+	float: left;
+	background: white;
+	position: relative;
+}
+
+.dzj1 {
+	float: left;
+	width: 90%;
+	margin-left: 5%;
+	height: 1.5rem;
+	margin-top: 0.5rem;
+}
+
+.dzj2 {
+	float: left;
+	width: 14rem;
+	margin-left: 10%;
+	float: left;
+	height: 2rem;
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 2rem;
+}
+
+.dzj3 {
+	width: 6rem;
+	height: 1.5rem;
+	float: left;
+	
+}
+
+.dzj3 input {
+	color: #EBEBEB;
+	font-size: 0.6rem;
+	width: 100%;
+	height: 100%;
+	border-radius: 0.25rem;
+	border: 0.05rem solid #EBEBEB;
+	text-align: center;
+}
+
+.dzj4 {
+	width: 1.5rem;
+	height: 0.1rem;
+	background: #EBEBEB;
+	float: left;
+	margin-top: 0.72rem;
+	margin-left: 0.25rem;
+}
+
+.dzj5 {
+	width: 6rem;
+	height: 1.5rem;
+	float: right;
+	
+}
+
+.dzj5 input {
+	color: #EBEBEB;
+	font-size: 0.6rem;
+	width: 100%;
+	height: 100%;
+	border-radius: 0.25rem;
+	border: 0.05rem solid #EBEBEB;
+	text-align: center;
+}
+
+.dzda {
+	width: 90%;
+	margin-left: 5%;
+	float: left;
+	margin-top: 2rem;
+	position: relative;
+}
+
+.dzda li {
+	width: 100%;
+	height: 1rem;
+}
+
+.dzda a {
+	float: left;
+	margin-left: 0.5rem;
+	line-height: 1rem;
+	width: 80%;
+	height: 1rem;
+}
+
+.dzda1 {
+	width: 13rem;
+	height: auto;
+	float: left;
+	top: 0.5rem;
+	margin: auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+.dzx {
+	width: 100%;
+	height: 10rem;
+	float: left;
+	margin-top: 0.5rem;
+	background: white;
+	position: relative;
+}
+
+.dzx1 {
+	width: 90%;
+	margin-left: 5%;
+	height: 1.5rem;
+	float: left;
+}
+
+.dzx2 {
+	width: 14rem;
+	margin-left: 10%;
+	float: left;
+	top: 1.5rem;
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+}
+
+.dzx3 {
+	width: 6rem;
+	height: 1.5rem;
+	float: left;
+	
+}
+
+.dzx3 input {
+	color: #EBEBEB;
+	font-size: 0.6rem;
+	width: 100%;
+	height: 100%;
+	border-radius: 0.25rem;
+	border: 0.05rem solid #EBEBEB;
+	text-align: center;
+}
+
+.dzx4 {
+	width: 1.5rem;
+	height: 0.1rem;
+	background: #EBEBEB;
+	float: left;
+	margin-top: 0.72rem;
+	margin-left: 0.25rem;
+}
+
+.dzx5 {
+	width: 6rem;
+	height: 1.5rem;
+	float: right;
+	
+}
+
+.dzx5 input {
+	color: #EBEBEB;
+	font-size: 0.6rem;
+	width: 100%;
+	height: 100%;
+	border-radius: 0.25rem;
+	border: 0.05rem solid #EBEBEB;
+	text-align: center;
+}
+
+.dzxa {
+	width: 13rem;
+	height: 5rem;
+	position: absolute;
+	margin: auto;
+	right: 0;
+	left: 0;
+	top: 4.5rem;
+}
+
+.dzxa1 {
+	width: 5rem;
+	height: 1.5rem;
+	float: left;
+	margin-left: 0.5rem;
+}
+
+.dzxa2 {
+	width: 5rem;
+	height: 1.5rem;
+	float: left;
+	margin-left: 2rem;
+}
+
+.dzxa3 {
+	width: 5rem;
+	height: 1.5rem;
+	float: left;
+	margin-left: 0.5rem;
+	margin-top: 0.5rem;
+}
+
+.dzxa4 {
+	width: 5.5rem;
+	height: 1.5rem;
+	float: left;
+	margin-left: 2rem;
+	margin-top: 0.5rem;
+}
+
+.hour {
+	float: left;
+	width: 90%;
+	margin-left: 5%;
+	height: 10rem;
+	margin-top: 0.5rem;
+	margin-bottom: 1rem;
+	position: relative;
+}
+
+.hour1 {
+	position: absolute;
+	float: left;
+	width: 14rem;
+	height: 10rem;
+	margin: auto;
+	left: 0;
+	right: 0;
+}
+
+#div1 {
+	width: 3.2rem;
+	height: 2rem;
+	float: left;
+	border: 0.05rem solid red;
+	margin-left: 1.5%;
+	text-align: center;
+	font-size: 0.7rem;
+}
+
+#div1 p {
+	font-size: 0.6rem;
+}
+
+#div2 p {
+	font-size: 0.6rem;
+}
+
+#div2 {
+	width: 3.2rem;
+	height: 2rem;
+	float: left;
+	border: 0.05rem solid #3E86CE;
+	margin-left: 0.2rem;
+	text-align: center;
+	font-size: 0.7rem;
+}
+
+#div3 p {
+	font-size: 0.6rem;
+}
+
+#div3 {
+	width: 3.2rem;
+	height: 2rem;
+	float: left;
+	border: 0.05rem solid #3E86CE;
+	margin-left: 0.2rem;
+	text-align: center;
+	font-size: 0.7rem;
+}
+
+#div4 p {
+	font-size: 0.6rem;
+}
+
+#div4 {
+	width: 3.2rem;
+	height: 2rem;
+	float: left;
+	border: 0.05rem solid #3E86CE;
+	margin-left: 0.2rem;
+	text-align: center;
+	font-size: 0.7rem;
+}
+
+#div5 {
+	width: 3.2rem;
+	height: 2rem;
+	float: left;
+	border: 0.05rem solid #31E636;
+	margin-left: 1.5%;
+	text-align: center;
+	font-size: 0.7rem;
+	margin-top: 0.25rem;
+}
+
+#div5 p {
+	font-size: 0.6rem;
+}
+
+#div6 p {
+	font-size: 0.6rem;
+}
+
+#div6 {
+	width: 3.2rem;
+	height: 2rem;
+	float: left;
+	border: 0.05rem solid #3E86CE;
+	margin-left: 0.2rem;
+	text-align: center;
+	font-size: 0.7rem;
+	margin-top: 0.25rem;
+}
+
+#div7 p {
+	font-size: 0.6rem;
+}
+
+#div7 {
+	width: 3.2rem;
+	height: 2rem;
+	float: left;
+	border: 0.05rem solid #3E86CE;
+	margin-left: 0.2rem;
+	text-align: center;
+	font-size: 0.7rem;
+	margin-top: 0.25rem;
+}
+
+#div8 p {
+	font-size: 0.6rem;
+}
+
+#div8 {
+	width: 3.2rem;
+	height: 2rem;
+	float: left;
+	border: 0.05rem solid red;
+	margin-left: 0.2rem;
+	text-align: center;
+	font-size: 0.7rem;
+	margin-top: 0.25rem;
+}
+
+#div9 {
+	width: 3.2rem;
+	height: 2rem;
+	float: left;
+	border: 0.05rem solid #3E86CE;
+	margin-left: 1.5%;
+	text-align: center;
+	font-size: 0.7rem;
+	margin-top: 0.25rem;
+}
+
+#div9 p {
+	font-size: 0.6rem;
+}
+
+#div10 p {
+	font-size: 0.6rem;
+}
+
+#div10 {
+	width: 3.2rem;
+	height: 2rem;
+	float: left;
+	border: 0.05rem solid #3E86CE;
+	margin-left: 0.2rem;
+	text-align: center;
+	font-size: 0.7rem;
+	margin-top: 0.25rem;
+}
+
+#div11 p {
+	font-size: 0.6rem;
+}
+
+#div11 {
+	width: 3.2rem;
+	height: 2rem;
+	float: left;
+	border: 0.05rem solid #3E86CE;
+	margin-left: 0.2rem;
+	text-align: center;
+	font-size: 0.7rem;
+	margin-top: 0.25rem;
+}
+
+#div12 p {
+	font-size: 0.6rem;
+}
+
+#div12 {
+	width: 3.2rem;
+	height: 2rem;
+	float: left;
+	border: 0.05rem solid #3E86CE;
+	margin-left: 0.2rem;
+	text-align: center;
+	font-size: 0.7rem;
+	margin-top: 0.25rem;
+}
+
+#div13 {
+	width: 3.2rem;
+	height: 2rem;
+	float: left;
+	border: 0.05rem solid red;
+	margin-left: 1.5%;
+	text-align: center;
+	font-size: 0.7rem;
+	margin-top: 0.25rem;
+}
+
+#div13 p {
+	font-size: 0.6rem;
+}
+
+#div14 p {
+	font-size: 0.6rem;
+}
+
+#div14 {
+	width: 3.2rem;
+	height: 2rem;
+	float: left;
+	border: 0.05rem solid #3E86CE;
+	margin-left: 0.2rem;
+	text-align: center;
+	font-size: 0.7rem;
+	margin-top: 0.25rem;
+}
+
+#div15 p {
+	font-size: 0.6rem;
+}
+
+#div15 {
+	width: 3.2rem;
+	height: 2rem;
+	float: left;
+	border: 0.05rem solid #3E86CE;
+	margin-left: 0.2rem;
+	text-align: center;
+	font-size: 0.7rem;
+	margin-top: 0.25rem;
+}
+
+#div16 p {
+	font-size: 0.6rem;
+}
+
+#div16 {
+	width: 3.2rem;
+	height: 2rem;
+	float: left;
+	border: 0.05rem solid #3E86CE;
+	margin-left: 0.2rem;
+	text-align: center;
+	font-size: 0.7rem;
+	margin-top: 0.25rem;
+}
+
+.dzda {
+	width: 90%;
+	margin-left: 5%;
+	float: left;
+	margin-top: 2rem;
+	position: relative;
+}
+
+.dzda li {
+	width: 100%;
+	height: 1rem;
+}
+
+.dzd2 input {
+	border-radius: 0.25rem;
+	font-size: 0.65rem;
+	text-align: center;
+	border: 0.05rem solid #EBEBEB;
+	width: 1rem;
+	height: 1rem;
+	margin-top: 0.25rem;
+	color: black;
+}
+
+.dzda a {
+	float: left;
+	margin-left: 0.5rem;
+	line-height: 1rem;
+	width: 80%;
+	height: 1rem;
+}
+
+.dzda1 {
+	width: 13rem;
+	height: auto;
+	float: left;
+	top: 0.5rem;
+	margin: auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+.dzfa {
+	width: 6rem;
+	float: left;
+	height: 1.6rem;
+	margin-top: 0.2rem;
+	margin-left: 1.5rem;
+}
+
+.dzfa input {
+	text-align: center;
+	width: 2.6rem;
+	height: 1.2rem;
+	float: left;
+	border: 0.05rem solid #EBEBEB;
+	border-radius: 0.25rem;
+	font-size: 0.7rem;
+	color: black;
+	text-align: center;
+}
+.ghu{
+	float: left;
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 0.5rem;
+	height: 1.5rem;
+	
+}
+.ghu-a{
+	float: left;
+	width: 20%;
+	height: 100%;
+}
+.ghu-a p{
+	color: black;
+	line-height: 1.5rem;
+	
+}
+.ghu-input{
+	float: left;
+	width: 80%;
+	height: 100%;
+}
+.ghu-input input{
+	float: left;
+	width: 45%;
+	height: 100%;
+	border: 0.05rem solid #EBEBEB;
+	border-radius: 0.25rem;
+	font-size: 0.8rem;
+	text-align: center;
+}
+.timex{
+	width: 0.8rem;margin-left: 0.1rem; height: 0.1rem;margin-top:0.65rem;float: left;background: #ABAEB5;
+}
+.dzfb input {
+	width: 2.5rem;
+	height: 1.2rem;
+	float: left;
+	border: 0.05rem solid #EBEBEB;
+	border-radius: 0.25rem;
+	font-size: 0.65rem;
+	text-align: center;
+}
+
+.dzfb {
+	width: 6rem;
+	float: left;
+	height: 1.6rem;
+	margin-top: 0.2rem;
+	margin-left: 1.5rem;
+}
+
+#box {
+	width: 100%;
+	text-align: center;
+}
+
+.dzg4a {
+	position: relative;
+	line-height: 30px;
+	float: left;
+	margin-left: 1rem;
+}
+
+.dzg4a input[type="radio"] {
+	width: 20px;
+	height: 20px;
+	opacity: 0;
+}
+
+.dzg4a label {
+	position: absolute;
+	left: 5px;
+	top: 3px;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 1px solid black;
+}
+
+
+/*设置选中的input的样式*/
+
+
+/* + 是兄弟选择器,获取选中后的label元素*/
+
+.dzg4a input:checked+label {
+	background-color: #2476C8;
+	border: 1px solid #2476C8;
+}
+
+.dzg4a input:checked+label::after {
+	position: absolute;
+	content: "";
+	width: 5px;
+	height: 10px;
+	top: 3px;
+	left: 6px;
+	border: 2px solid white;
+	border-top: none;
+	border-left: none;
+	transform: rotate(45deg)
+}
+
+.dzg4a span {
+	margin-left: 0.5rem;
+	font-size: 0.7rem;
+}
+
+.dzg5a {
+	position: relative;
+	line-height: 30px;
+	float: left;
+	width: 100%;
+}
+
+.dzg5a input[type="radio"] {
+	width: 20px;
+	height: 20px;
+	opacity: 0;
+}
+
+.dzg5a label {
+	position: absolute;
+	left: 5px;
+	top: 3px;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 1px solid black;
+}
+
+
+/*设置选中的input的样式*/
+
+
+/* + 是兄弟选择器,获取选中后的label元素*/
+
+.dzg5a input:checked+label {
+	background-color: #2476C8;
+	border: 1px solid #2476C8;
+}
+
+.dzg5a input:checked+label::after {
+	position: absolute;
+	content: "";
+	width: 5px;
+	height: 10px;
+	top: 3px;
+	left: 6px;
+	border: 2px solid white;
+	border-top: none;
+	border-left: none;
+	transform: rotate(45deg)
+}
+
+.dzg5a span {
+	margin-left: 0.3rem;
+	font-size: 0.65rem;
+}
+
+.dpqing {
+	width: 100%;
+	height: 13rem;
+	float: left;
+	background: white;
+	margin-top: 0.5rem;
+}
+
+.dpqinga {
+	width: 90%;
+	float: left;
+	margin-left: 5%;
+	height: 1.2rem;
+	margin-top: 0.5rem;
+	font-size: 0.8rem;
+}
+
+.dpqingb {
+	width: 90%;
+	float: left;
+	margin-left: 5%;
+	height: 1.6rem;
+}
+
+.dpax {
+	width: 6.5rem;
+	height: 1.6rem;
+	float: left;
+}
+
+.dpax input {
+	width: 90%;
+	height: 1.1rem;
+	margin-top: 0.2rem;
+	border: 0.05rem solid #EBEBEB;
+	border-radius: 0.25rem;
+	font-size: 0.7rem;
+	text-align: center;
+}
+
+.dpac {
+	width: 100%;
+	
+	float: left;
+	margin-top: 0.25rem;
+	height: 4rem;
+	
+}
+.dpac textarea{
+	float: left;
+	width: 100%;
+	height: 100%;
+	border-radius:0.5rem;
+	font-size: 0.7rem;
+	color:black;
+}
+.fgu{
+	float: left;
+	border-radius:0.5rem ;
+	width: 90%;
+	margin-left: 5%;
+	border: 0.05rem solid #77A9DD;
+	height: 2rem;
+	margin-top: 1rem;
+	text-align: center;
+	
+}
+.fgu h1{
+	font-weight: 100;
+	letter-spacing: 1rem;
+	color:#77A9DD;
+	font-size: 0.9rem;
+	line-height: 2rem;
+}
+.fgt{
+	float: right;
+	height: 1.5rem;
+	text-align: right;
+	
+}
+.fgt h1{
+	font-size: 0.9rem;
+	font-weight: 100;
+	line-height: 1.5rem;
+	color: #77A9DD;
+
+	
+}
+#containere span {
+	position: relative;
+	
+}
+#containere a{
+	line-height: 1rem;
+	margin-left: 0.5rem;
+}
+
+#containere .input_check {
+	position: absolute;
+	visibility: hidden;
+}
+
+#containere .input_check+label {
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	border: 1px solid #EBEBEB;
+}
+
+#containere .input_check:checked+label:after {
+	content: "";
+	position: absolute;
+	left: 2px;
+	bottom: 12px;
+	width:0.8rem;
+	height: 0.4rem;
+	border: 2px solid #2476C8;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	-ms-transform: rotate(-60deg);
+	-moz-transform: rotate(-60deg);
+	-webkit-transform: rotate(-60deg);
+	transform: rotate(-45deg);
+}
+
+
+.spaexa1 ul{
+	width: 100%;
+	
+}
+.spaexa1 li{
+	width: 23%;
+	margin-left: 2%;
+	height: 2rem;
+	float: left;
+	background: #EBEBEB;
+	margin-top: 0.5rem;
+	font-size: 0.65rem;
+	border: 0.05rem solid #007AFF;
+}
+.contentya ul{
+	width: 100%;
+	
+}
+.contentya li{
+	width: 23%;
+	margin-left: 2%;
+	height: 2rem;
+	float: left;
+	background: #EBEBEB;
+	margin-top: 0.5rem;
+	text-align: center;
+	font-size: 0.65rem;
+	border: 0.05rem solid #007AFF;
+}
+
+.dzd2 ul{
+	float: left;
+	width: 100%;
+	
+}
+.dzd2 li{
+	float: left;
+	width: 24%;
+	margin-left: 1%;
+	height: 2rem;
+	
+}
+.zdcv a{
+  font-size:0.8rem ;
+  line-height: 2rem;	
+}
+
+
+
+
+input[type="date"]:before{
+    content: attr(placeholder);
+    color:#A3A3A3;
+   
+}
+

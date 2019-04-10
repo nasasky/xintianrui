@@ -1,0 +1,214 @@
+@charset "utf-8";
+/* CSS Document */
+/*全局样式*/
+body { font-family:"微软雅黑"; font-size:12px; color:#333;background: #F5F4F9;}
+* { margin:0px; padding:0px; list-style:none;}
+
+
+html {
+    font-size : 20px;
+}
+@media only screen and (min-width: 401px){
+    html {
+        font-size: 25px !important;
+    }
+}
+@media only screen and (min-width: 428px){
+    html {
+        font-size: 26.75px !important;
+    }
+}
+@media only screen and (min-width: 481px){
+    html {
+        font-size: 30px !important; 
+    }
+}
+@media only screen and (min-width: 569px){
+    html {
+        font-size: 35px !important; 
+    }
+}
+@media only screen and (min-width: 641px){
+    html {
+        font-size: 40px !important; 
+    }
+}
+
+.clear { clear:both;}
+
+.fl { float:left;}
+.fr { float:right; }
+ul { list-style:none; margin:0px; padding:0px;}
+img { border:0px; max-width:100%;}
+.dbgao { height:80px;}
+
+
+关于我们
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;vertical-align:baseline;outline:0;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+html{overflow-y:scroll}
+/* page structure */
+header{display:block;width:100%;height:55px;text-align:center;background: white;}
+header strong {font-size:1rem; color:#FFF; line-height:55px;color: black; font-weight: 100;margin-right: -12%;}
+.menubtn{position:relative;z-index:101;text-decoration:none; width:30px; height:55px; float:right;  margin-right:10px;}
+a.fanhui { width:20px; height:55px; float:left; margin-left:10px; background:url(../images/back.png) no-repeat center;}
+
+.zymain { width:100%; height:auto;}
+.zybt { width:100%;margin:10px 0px; }
+.zybt1 { width:100%;margin:0px 0px; }
+
+
+/*转让金额*/
+.zrj input{
+	 /*margin-left: 0.5rem;*/height:1.5rem;
+	float:left;
+	font-size: 1rem;
+	border: 0rem;
+	margin-top: 0.15rem;
+	width: 55%;
+
+}
+.zrja{
+	 width: 100%;float: left;height: 2rem;margin-top: 0.5rem;
+	
+}
+.zrja input{
+	width: 90%;
+	height: 100%;
+	float: left;
+	margin-left: 5%;
+	border-radius:0.5rem ;
+	background: #2476C8;
+	color: white;
+}
+
+
+
+/*退款金额*/
+.tkb input{
+	 margin-left: 0.5rem;height:1.5rem;
+	float:left;
+	font-size: 1rem;
+	border: 0rem;
+	
+}
+.tka{
+	 width: 100%;float: left;height: 2rem;margin-top: 0.5rem;
+	
+}
+.tka input{
+	width: 90%;
+	height: 100%;
+	float: left;
+	margin-left: 5%;
+	border: 0rem;
+	border-radius:0.5rem ;
+	background: #2476C8;
+	color: white;
+	margin-bottom: 1rem;
+	font-size: 0.7rem;
+}
+.tks{
+	background: white;
+	height: 2rem;
+	width: 100%;
+}
+.tks a{
+	font-size: 0.7rem;
+	margin-left: 5%;
+}
+
+
+
+/*评价*/
+.pingjia{
+width: 100%;
+height: 6rem;
+background: white;
+}
+.pingjia1{
+	width: 90%;
+	margin-left: 5%;
+	float: left;
+	height: 5rem;
+	
+	margin-top: 0.5rem;
+}
+textarea{
+	width: 100%;
+	height: 100%;
+	border: 0rem;
+	font-size: 0.7rem;
+}
+
+.pingjia2{
+	width: 100%;
+	height: 2rem;
+	float: left;
+	margin-top: 0.5rem;
+	background: white;
+}
+
+.pingjia3{
+	width: 90%;
+	margin-left: 5%;
+	float: left;
+	height: 2rem;
+	border-radius:0.25rem ;
+	background: #2476C8;
+	margin-top:1rem;
+	text-align: center;
+	line-height: 2rem;
+	font-size: 0.8rem;
+	color: white;
+}
+.pina{
+	width: 3rem;
+	float: left;
+	margin-left: 5%;
+	height: 1.5rem;
+	font-size: 0.7rem;
+	line-height: 1.5rem;
+	text-align: center;
+	margin-top: 0.25rem;
+}
+.pinb{
+	width: 10rem;
+	float:right;
+	margin-right: 5%;
+	height: 1.5rem;
+	margin-top: 0.25rem;
+}
+.pinc{
+	width: 3.2rem;
+	height: 1.5rem;
+	float: left;
+	
+}
+.pinimg{
+	width: 1.5rem;
+	height: 1.5rem;
+	float: left;
+	
+}
+.pinc p{
+	font-size: 0.65rem;
+	line-height: 1.5rem;
+	margin-left: 1.7rem;
+	
+	
+}
+.wrap{
+	width: 100%;
+	height: 100%;
+}
+.wrap ul li{
+	width: 3.3rem;
+	height: 2rem;
+	float: left;
+	list-style: none;
+}
+.wrap ul li img{
+	display: inline-block;
+	width: 1.2rem;
+	height: 1.2rem;
+}

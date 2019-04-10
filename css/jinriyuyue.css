@@ -1,0 +1,423 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+/*全局样式*/
+
+body {
+	font-family: "微软雅黑";
+	font-size: 12px;
+	color: #333;
+	background: #F5F4F9;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+html {
+	font-size: 20px;
+}
+
+@media only screen and (min-width: 401px) {
+	html {
+		font-size: 25px !important;
+	}
+}
+
+@media only screen and (min-width: 428px) {
+	html {
+		font-size: 26.75px !important;
+	}
+}
+
+@media only screen and (min-width: 481px) {
+	html {
+		font-size: 30px !important;
+	}
+}
+
+@media only screen and (min-width: 569px) {
+	html {
+		font-size: 35px !important;
+	}
+}
+
+@media only screen and (min-width: 641px) {
+	html {
+		font-size: 40px !important;
+	}
+}
+
+.clear {
+	clear: both;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+img {
+	border: 0px;
+	max-width: 100%;
+}
+
+.dbgao {
+	height: 80px;
+}
+
+关于我们 a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	outline: 0;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+html {
+	overflow-y: scroll
+}
+
+
+/* page structure */
+
+header {
+	display: block;
+	width: 100%;
+	height: 55px;
+	text-align: center;
+}
+
+header strong {
+	font-size: 1rem;
+	color: #FFF;
+	line-height: 55px;
+	color: black;
+	font-weight: 100;
+	margin-right: 5%;
+}
+
+
+/*.menubtn{position:relative;z-index:101;text-decoration:none;background-image:url(../images/nav.png);background-position: center center; background-repeat:no-repeat; width:30px; height:55px; float:right;  margin-right:10px;}*/
+
+a.fanhui {
+	width: 20px;
+	height: 55px;
+	float: left;
+	margin-left: 10px;
+	background: url(../images/back.png) no-repeat center;
+}
+
+.zymain {
+	width: 100%;
+	height: auto;
+}
+
+.zybt {
+	width: 100%;
+	margin: 10px 0px;
+}
+.jra{
+	 width: 90%;float: left;margin-left: 5%;
+}
+.jra h1{
+ color: black;font-size: 0.8rem;font-weight: 400;	
+}
+.jra1{
+	width: 90%;float: left;margin-left: 5%;border-radius:0.5rem ;margin-top: 0.5rem; background: white;
+}
+.jra1 ul {
+	width: 95%;
+	float: left;
+	margin-left: 2.5%;
+}
+.jra2{
+	margin-top: 2rem; width: 100%;float: left;margin-bottom: 1rem;
+}
+.jra1 li {
+	line-height: 1rem;
+}
+
+.jra1 li a {
+	font-size: 0.7rem;
+	color: black;
+}
+
+.jrb ul {
+	width: 95%;
+	float: left;
+	margin-left: 2.5%;
+	margin-top: 0.5rem;
+}
+
+.jrb li {
+	line-height: 1rem;
+}
+
+.jrb li a {
+	font-size: 0.7rem;
+	color: black;
+}
+
+.jrb span {
+	color: #2476C8;
+}
+
+.jrx {
+	width: 90%;
+	height: 2rem;
+	margin-left: 5%;
+	float: left;
+	margin-top: 0.5rem;
+	
+}
+.jrx a{
+	text-decoration: none;
+}
+.jrx1{
+	width: 90%;
+	height: 2rem;
+	margin-left: 5%;
+	float: left;
+	margin-top: 0.5rem;
+	
+	
+}
+.btn {
+	font-size: 0.8rem;
+	line-height: 2rem;
+	text-align: center;
+	background: #2476C8;
+	color: #fff;
+	width: 100%;
+	border-radius: 0.25rem;
+}
+.btn1{
+	font-size: 0.8rem;
+	line-height: 2rem;
+	text-align: center;
+	background: white;
+	color: #2476C8;
+	width: 100%;
+	border-radius:0.25rem ;
+	border: 0.05rem solid #2476C8;
+}
+
+.bounce {
+	-webkit-animation-name: bounce;
+	animation-name: bounce;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both -webkit-transform-origin: center bottom;
+	-ms-transform-origin: center bottom;
+	transform-origin: center bottom
+}
+.bounce1{
+	-webkit-animation-name: bounce1;
+	animation-name: bounce1;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both -webkit-transform-origin:center bottom;
+	-ms-transform-origin:center  bottom;
+	transform-origin:center  bottom;  
+}
+#jq22 {
+	animate-duration: 2s;
+	/*//动画持续时间*/
+	animate-delay: 1s;
+	/*//动画延迟时间*/
+	animate-iteration-count: 1;
+	/*//动画执行次数*/
+	
+}
+#jq23{
+	animate-duration:2s;
+	animate-delay:1s;
+	animate-iteration-count:1;
+	margin-top: 0.5rem;
+}
+
+@-webkit-keyframes bounce {
+	0% {
+		background: #2476C8;
+	}
+	50% {
+		background: #e4efe9;
+	}
+	100% {
+		background: #2476C8;
+	}
+}
+@-webkit-keyframes bounce1{
+	
+	0%{
+		background: red;
+		border: 0rem;
+	}
+	50%{
+		background:#c43a30;
+		color: white;
+		border: 0rem;
+	}
+	100%{
+		background: red;
+		color: white;
+		border: 0rem;
+	}
+}
+@keyframes bounce {
+	0% {
+		background: #2476C8;
+	}
+	50% {
+		background: #e4efe9;
+	}
+	100% {
+		background: #2476C8;
+	}
+}
+
+@keyframes bounce1{
+	0%{
+		background: red;
+		border: 0rem;
+	}
+	50%{
+		background: #c43a30;
+		color: white;
+		border: 0rem;
+	}
+	100%{
+		background:red;
+		color: white;
+		border: 0rem;
+	}
+}
+
+.jrcfa{
+	width:100% ;float: left;margin-bottom: 0.5rem;border-bottom:dotted 0.05rem #707070;
+}
+.jrcfa1{
+	width: 2.4rem;height: 1rem;float: left;font-size: 0.75rem;margin-left: 1.5rem;text-align: right;
+}
+.jrcfa2{
+	width: 9rem;margin-bottom: 0.5rem;float: left;font-size: 0.75rem;
+}
+.jrca{
+	width: 90%;float: left;margin-left: 5%;margin-top: 0.5rem;
+}
+.jrca h1{
+	color: black;font-size: 0.8rem;font-weight: 400;
+}
+.jrb{
+	 width: 90%;margin-left: 5%;float: left;height: 5.5rem;border-radius:0.5rem ;margin-top: 0.5rem; background: white;
+}
+.jrbx{
+	width: 90%;margin-left: 5%;float: left;height: 1.5rem;border-radius:0.5rem ;margin-top: 0.5rem; background: white;
+}
+.jrbx1{
+	color: black; width: 4rem;float: left;height: 1.5rem;font-size: 0.75rem;margin-left: 0.5rem;line-height: 1.5rem;
+}
+.jrbx2{
+	 float: right;height: 1.1rem;width: 1.1rem;margin-top: 0.2rem;margin-right: 0.5rem;
+}

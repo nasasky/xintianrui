@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>公司加盟后台</title>
+<link rel="stylesheet" type="text/css" href="css/gsjiamenghou.css"/>
+
+</head>
+<body>
+<div id="pgcontainer">
+
+  <!--头部的开始-->
+  <header style="background: white;"> 
+  <a class="fanhui" href="jiamenghoutai.html"></a>
+  <strong style="margin-right: 0;">加盟信息</strong>
+  <a href="dianzhuhoutai.html" class="menubtn"></a> 
+    
+  </header>
+  <!--头部的结束-->
+  
+  <!--主题内容的开始-->
+  <div class="zymain">
+    <div class="zybt">
+    	
+<div class="gsa">
+	<div class="gsa1">
+		<ul>
+			<li>法人姓名：<a style="font-size: 0.7rem;color: black;">张三</a>
+				<div class="fw">
+					<a>
+						<img src="images/fw.jpg" style="width: 100%;height: 100%;" />
+					</a>
+				</div>
+			</li>
+			<li>公司名称：
+				<div class="gs" >
+				<a>中山市中山市讯网络科技有限公司</a>
+			</div>
+			</li>
+			<li>公司地址：
+			<div class="gs">
+				<a style="line-height: 1rem;">中山市中山市广东中山市石歧区富华大道3号</a>
+			</div>
+			</li>
+			<li>联系电话：<a>15398886988</a></li>
+			<li>太赫设备：<a>12</a></li>
+			
+			
+		</ul>
+	</div>
+	<div class="gssxx" style="width: 100%;float: left;">
+	  <a style="margin-left: 5%;font-size: 0.75rem;">	加盟原因：</a>
+			<div class="gsa2" style="float:right;margin-top: 0.25rem;width: 90%;margin-right: 5%; margin-bottom: 1rem;border-radius:0.25rem ;font-size: 0.65rem;">
+			本公司从事化妆服务行业本公司从事化妆本
+公司从事化妆服务行业本公司从事化妆服务
+
+
+			</div>
+	</div>
+	
+	<div class="gsl">
+		<a>
+			<h1 style="font-size: 0.7rem;color: black;font-weight: 200;">营业执照：</h1>
+		</a>
+		<div class="gsl1">
+			<img id="myImg"  src="images/zz.jpg"  >
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">×</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+		</div>
+		
+	<div class="gsl1">
+	<img id="myImgy"  src="images/zz.jpg"  >
+
+<!-- The Modal -->
+<div id="myModaly" class="modaly">
+  <span class="closey">×</span>
+  <img class="modal-contenty" id="img02">
+  <div id="captiony"></div>
+</div>
+		</div>	
+		
+	</div>
+</div>
+				
+				
+
+    </div>
+    
+  </div>
+  <!--主题内容的结束-->
+
+<!--底部的开始-->
+
+<!--footer开始-->
+
+<div class="lfooter" style="width: 100%;height: 2rem;float: left;"></div>
+
+<!--footer结束-->
+
+</div>
+
+
+
+</body>
+<script>
+// 获取模态窗口
+var modal = document.getElementById('myModal');
+
+// 获取图片模态框，alt 属性作为图片弹出中文本描述
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+}
+
+// 获取 <span> 元素，设置关闭模态框按钮
+var span = document.getElementsByClassName("close")[0];
+
+// 点击 <span> 元素上的 (x), 关闭模态框
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+
+
+// 获取模态窗口
+var modal = document.getElementById('myModaly');
+
+// 获取图片模态框，alt 属性作为图片弹出中文本描述
+var img = document.getElementById('myImgy');
+var modalImg = document.getElementById("img02");
+var captionText = document.getElementById("captiony");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+}
+
+// 获取 <span> 元素，设置关闭模态框按钮
+var span = document.getElementsByClassName("closey")[0];
+
+// 点击 <span> 元素上的 (x), 关闭模态框
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+</html>

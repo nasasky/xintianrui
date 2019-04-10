@@ -1,0 +1,321 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+/*全局样式*/
+
+body {
+	font-family: "微软雅黑";
+	font-size: 12px;
+	color: #333;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+html {
+	font-size: 20px;
+}
+
+@media only screen and (min-width: 401px) {
+	html {
+		font-size: 25px !important;
+	}
+}
+
+@media only screen and (min-width: 428px) {
+	html {
+		font-size: 26.75px !important;
+	}
+}
+
+@media only screen and (min-width: 481px) {
+	html {
+		font-size: 30px !important;
+	}
+}
+
+@media only screen and (min-width: 569px) {
+	html {
+		font-size: 35px !important;
+	}
+}
+
+@media only screen and (min-width: 641px) {
+	html {
+		font-size: 40px !important;
+	}
+}
+
+.clear {
+	clear: both;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+img {
+	border: 0px;
+	max-width: 100%;
+}
+
+.dbgao {
+	height: 80px;
+}
+
+关于我们 a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	outline: 0;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+html {
+	overflow-y: scroll
+}
+
+
+/* page structure */
+
+header {
+	display: block;
+	width: 100%;
+	height: 8rem;
+	text-align: center;
+}
+
+
+/*header strong {font-size:1rem; color:#FFF; line-height:55px;color: black; font-weight: 100;}
+.menubtn{position:relative;z-index:101;text-decoration:none;background-image:url(../images/nav);background-position: center center; background-repeat:no-repeat; width:30px; height:55px; float:right;  margin-right:10px;}
+a.fanhui { width:20px; height:55px; float:left; margin-left:10px; background:url(../images/back.png) no-repeat center;}*/
+
+.zymain {
+	width: 100%;
+	height: auto;
+}
+
+.zybt {
+	width: 100%;
+	height: 80px;
+	margin: 10px 0px;
+}
+
+.hya {
+	width: 100%;
+	float: left;
+	height: 8rem;
+	background: url(../images/kuaile.png) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+
+.hyba {
+	/*background: url(../images/shalou.png) no-repeat;*/
+	/*background-size:100% 100% ;*/
+}
+
+.hyba2 {
+	background: url(../images/yuyue.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.hyba3 {
+	background: url(../images/dingdan.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.hybx1 {
+	width: 90%;
+	margin-left: 5%;
+	float: left;
+	height: 1.5rem;
+	font-size: 0.7rem;
+	line-height: 1.5rem;
+	border-bottom: 0.05rem solid #EBEBEB;
+	color: black;
+}
+
+.hybx2 {
+	width: 1.2rem;
+	height: 1.2rem;
+	float: right;
+}
+
+.hybx3 {
+	margin-top: 0.3rem;
+	width: 90%;
+	height: 4.2rem;
+	float: left;
+	margin-left: 5%;
+	position: relative;
+}
+
+.hyax {
+	width: 14.5rem;
+	height: 4rem;
+	float: left;
+	margin: auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+.hyax1 {
+	width: 2.5rem;
+	height: 4rem;
+	float: left;
+	text-align: center;
+	font-size: 0.65rem;
+	color: black;
+}
+
+.hyax2 {
+	width: 2.5rem;
+	margin-left: 2.5rem;
+	height: 4rem;
+	float: left;
+	text-align: center;
+	font-size: 0.65rem;
+}
+
+.hyaxt {
+	width: 2rem;
+	height: 2rem;
+	float: left;
+	margin-left: 0.25rem;
+	margin-bottom: 0.5rem;
+}
+
+.hyaxl {
+	z-index: 999;
+	position: absolute;
+	width: 1rem;
+	height: 1rem;
+	float: left;
+	background: black;
+	margin-top: -2rem;
+	margin-left: 1.2rem;
+	background: red;
+	border-radius: 1rem;
+    font-size: 0.65rem;
+    color: white;
+}
+.hya1{
+	 float: right;margin-right: 1rem;border-radius:0.7rem ; height: 1.5rem;margin-top: 0.5rem; width: 4rem;background-color: #ABAEB5; background-color:rgba(143,173,208,0.7);
+}
+.hya1 h1{
+	 font-size: 0.75rem;color: white;line-height: 1.5rem;font-weight: 400;
+}
+.hya2{
+	float: left;width: 3.5rem;height: 3.5rem;position: absolute;right: 0;left: 0;margin: auto;top: 1.7rem;border-radius:3.5rem ;
+}
+.hya3{
+	float: left;width: 4rem;height: 1.2rem;right: 0;left: 0;margin: auto;top: 5.5rem;position: absolute;
+}
+.hya3 h1{
+	font-size: 0.75rem;color: white;font-weight: 200;
+}
+.hyxian{
+	width: 100%;height: 0.5rem;background: #EBEBEB;float: left;
+}

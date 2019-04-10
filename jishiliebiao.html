@@ -1,0 +1,366 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>技师列表</title>
+<link rel="stylesheet" type="text/css" href="css/jishiliebiao.css"/>
+<link href="css/demo.css" rel="stylesheet" />
+
+<script src="js/jquery-1.9.1.js"></script>
+<script src="layer/layer.js"></script>
+<script src="js/demo.js"></script>
+<script src="js/jquery.cityselect.js"></script>
+
+<script>
+	$(document).ready(function() {
+		 $("#city").citySelect({
+				prov: "",
+				city: "",
+				dist: "",
+				nodata: "none"
+			});
+		
+	});
+
+ </script>
+</head>
+<body>
+<div id="pgcontainer">
+
+  <!--头部的开始-->
+  <header> 
+  <a class="fanhui" href="#"></a>
+  <strong>技师列表</strong>
+  <a href="#" class="menubtn"></a> 
+    
+  </header>
+  <!--头部的结束-->
+  
+  <!--主题内容的开始-->
+  <div class="zymain">
+    <div class="zybt">
+    	<div class="jb" style="width: 100%;height: 1.7rem;background: #F5F4F9;">
+    		  <div id="dreg">
+ <div class="regitem">
+		
+		<div id="city">  
+		  <select class="prov" ></select>   
+		  <select class="city"  disabled="disabled"></select>  
+		  <select class="dist" disabled="disabled"></select>  
+		  <select name="year">  
+       <option value="">店铺选择</option>  
+       <option value="2010">旗舰店</option>  
+       <option value="2011">街门店</option>  
+       <option value="2011">社区店</option>  
+
+    </select>
+		</div>
+		
+	</div>
+
+</div>
+    	</div>
+ 
+				
+				<div class="jsbutton">
+					<input id="keyword" placeholder="输入关键字搜索"  type="search" style="background: white; font-size: 0.7rem;color: #B1B1B1;border-radius:0.25rem ; float: left;border: 0rem; width: 80%;height: 100%;" /> 
+					<div class="jsbutton1">
+						<a>
+							<img src="images/sousuo.png" style="width: 100%;height: 100%;" />
+						</a>
+					</div>
+				</div>
+   
+   <div class=" jsselect">
+   	<ul>
+           
+          <div class="pincf" style="width: 1.8rem;height:1.8rem;float: left;margin-left: 0.5rem;">
+											<form>
+												<div class="pincxx" >
+													<div class="pinimg"  style="width: 1.8rem;">
+														<img src="images/checks2.png" class="wujiang_pic_size" id="caocao_pid" onClick="change_pid()">
+													</div>
+													</div>
+												</form>
+										</div>
+										<div class="pincf" style="width: 2rem;height:1.8rem;float: left;font-size: 0.75rem;line-height: 1.3rem;">太赫</div>
+								
+								
+								<div class="pincf" style="width: 1.8rem;height:1.8rem;float: left;margin-left: 0.5rem;">
+											<form>
+												<div class="pincxx" >
+													<div class="pinimg"  style="width: 1.8rem;">
+														<img src="images/checks2.png" class="wujiang_pic_size" id="caocao_pix" onClick="change_pix()">
+													</div>
+													</div>
+												</form>
+										</div>
+										<div class="pincf" style="width: 2rem;height:1.8rem;float: left;font-size: 0.75rem;line-height: 1.3rem;">其他</div>
+										
+           
+        </ul>
+   </div>
+  			<div class="cgal_nr">
+					<div class="lanren">
+						<div class="hidden">
+						
+						<!--
+                        	li列表内容
+                        -->
+							<li>
+								<a href="jishixiangqing.html">
+							   <div class="cwli">
+									<div class="cwlig" style="width: 3.5rem;height: 3.5rem;float: left;border-radius:3.5rem ;margin-bottom: 1rem;">
+									<img src="images/touxiang.png" />
+									</div>
+									<div class="cww">
+										<h1>张某</h1>
+										<h2>2018年毕业于广东高级理疗技师学
+院,毕业后一直从事于理疗服务行业.2018年毕业于广东高级理疗技师学
+院,毕业后一直从事于理疗服务行业.</h2>
+									</div>
+						     </div>
+								</a>
+							</li>
+							
+							
+
+							<li>
+								<div class="cwt"></div>
+								 <div class="cwli">
+									<div class="cwlig" style="width: 3.5rem;height: 3.5rem;float: left;border-radius:3.5rem ;margin-bottom: 1rem;">
+									<a>
+										<img src="images/touxiang.png" />
+									</a>
+									</div>
+									<div class="cww">
+										<h1>张某</h1>
+										<h2>2018年毕业于广东高级理疗技师学
+院,毕业后一直从事于理疗服务行业.2018年毕业于广东高级理疗技师学
+院,毕业后一直从事于理疗服务行业.</h2>
+									</div>
+						     </div>
+								
+								
+							</li>
+							
+							
+							<li>
+								<div class="cwt"></div>
+									 <div class="cwli">
+									<div class="cwlig" style="width: 3.5rem;height: 3.5rem;float: left;border-radius:3.5rem ;margin-bottom: 1rem;">
+									<a>
+										<img src="images/touxiang.png" />
+									</a>
+									</div>
+									<div class="cww">
+										<h1>张某</h1>
+										<h2>2018年毕业于广东高级理疗技师学
+院,毕业后一直从事于理疗服务行业.2018年毕业于广东高级理疗技师学
+院,毕业后一直从事于理疗服务行业.</h2>
+									</div>
+						     </div>
+								
+								
+								
+							</li>
+							
+							
+							<li>
+								<div class="cwt"></div>
+									 <div class="cwli">
+									<div class="cwlig" style="width: 3.5rem;height: 3.5rem;float: left;border-radius:3.5rem ;margin-bottom: 1rem;">
+									<a>
+										<img src="images/touxiang.png" />
+									</a>
+									</div>
+									<div class="cww">
+										<h1>张某</h1>
+										<h2>2018年毕业于广东高级理疗技师学
+院,毕业后一直从事于理疗服务行业.2018年毕业于广东高级理疗技师学
+院,毕业后一直从事于理疗服务行业.</h2>
+									</div>
+						     </div>
+							
+								
+							</li>
+							
+							
+							<li>
+								<div class="cwt"></div>
+								 <div class="cwli">
+									<div class="cwlig" style="width: 3.5rem;height: 3.5rem;float: left;border-radius:3.5rem ;margin-bottom: 1rem;">
+									<a>
+										<img src="images/touxiang.png" />
+									</a>
+									</div>
+									<div class="cww">
+										<h1>张某</h1>
+										<h2>2018年毕业于广东高级理疗技师学
+院,毕业后一直从事于理疗服务行业.2018年毕业于广东高级理疗技师学
+院,毕业后一直从事于理疗服务行业.</h2>
+									</div>
+						     </div>
+				</li>
+							
+							
+							<li>
+								<div class="cwt"></div>
+								 <div class="cwli">
+									<div class="cwlig" style="width: 3.5rem;height: 3.5rem;float: left;border-radius:3.5rem ;margin-bottom: 1rem;">
+									<a>
+										<img src="images/touxiang.png" />
+									</a>
+									</div>
+									<div class="cww">
+										<h1>张某</h1>
+										<h2>2018年毕业于广东高级理疗技师学
+院,毕业后一直从事于理疗服务行业.2018年毕业于广东高级理疗技师学
+院,毕业后一直从事于理疗服务行业.</h2>
+									</div>
+						     </div>
+							
+							</li>
+							
+							
+							<li>
+								<div class="cwt"></div>
+								 <div class="cwli">
+									<div class="cwlig" style="width: 3.5rem;height: 3.5rem;float: left;border-radius:3.5rem ;margin-bottom: 1rem;">
+									<a>
+										<img src="images/touxiang.png" />
+									</a>
+									</div>
+									<div class="cww">
+										<h1>张某</h1>
+										<h2>2018年毕业于广东高级理疗技师学
+院,毕业后一直从事于理疗服务行业.2018年毕业于广东高级理疗技师学
+院,毕业后一直从事于理疗服务行业.</h2>
+									</div>
+						     </div>
+								
+								
+							
+							</li>
+							
+							
+							<li>
+								<div class="cwt"></div>
+							 <div class="cwli">
+									<div class="cwlig" style="width: 3.5rem;height: 3.5rem;float: left;border-radius:3.5rem ;margin-bottom: 1rem;">
+									<a>
+										<img src="images/touxiang.png" />
+									</a>
+									</div>
+									<div class="cww">
+										<h1>张某</h1>
+										<h2>2018年毕业于广东高级理疗技师学
+院,毕业后一直从事于理疗服务行业.2018年毕业于广东高级理疗技师学
+院,毕业后一直从事于理疗服务行业.</h2>
+									</div>
+						     </div>
+							
+						
+							</li>
+							
+							
+							<li>
+								<div class="cwt"></div>
+							 <div class="cwli">
+									<div class="cwlig" style="width: 3.5rem;height: 3.5rem;float: left;border-radius:3.5rem ;margin-bottom: 1rem;">
+									<a>
+										<img src="images/touxiang.png" />
+									</a>
+									</div>
+									<div class="cww">
+										<h1>张某</h1>
+										<h2>2018年毕业于广东高级理疗技师学
+院,毕业后一直从事于理疗服务行业.2018年毕业于广东高级理疗技师学
+院,毕业后一直从事于理疗服务行业.</h2>
+									</div>
+						     </div>
+								
+							
+							</li>
+							
+						</div>
+						<ul class="list">数据加载中，请稍后...</ul>
+						<div class="more">
+							<a href="javascript:;" onClick="lanren.loadMore();">加载更多</a>
+						</div>
+					</div>
+				</div>
+  
+    </div>
+    
+  </div>
+
+</div>
+
+
+</body>
+<script>
+			var _content = []; //临时存储li循环内容
+			var lanren = {
+				_default: 5, //默认显示图片个数
+				_loading: 5, //每次点击按钮后加载的个数
+				init: function() {
+					var lis = $(".lanren .hidden li");
+					$(".lanren ul.list").html("");
+					for(var n = 0; n < lanren._default; n++) {
+						lis.eq(n).appendTo(".lanren ul.list");
+					}
+					$(".lanren ul.list img").each(function() {
+						$(this).attr('src', $(this).attr('realSrc'));
+					})
+					for(var i = lanren._default; i < lis.length; i++) {
+						_content.push(lis.eq(i));
+					}
+					$(".lanren .hidden").html("");
+				},
+				loadMore: function() {
+					var mLis = $(".lanren ul.list li ").length;
+					for(var i = 0; i < lanren._loading; i++) {
+						var target = _content.shift();
+						if(!target) {
+							$('.lanren .more').html("<p>全部加载完毕...</p>");
+							break;
+						}
+						$(".lanren ul.list").append(target);
+						$(".lanren ul.list img").eq(mLis + i).each(function() {
+							$(this).attr('src', $(this).attr('realSrc'));
+						});
+					}
+				}
+			}
+			lanren.init();
+		</script>
+		
+		 <script>
+        var list = document.getElementsByTagName('input');
+        for(let i = 0;i<list.length;i++) {
+            list[i].addEventListener('click',function() {
+                for(let i=0;i<list.length;i++) {
+                    list[i].removeAttribute('class');
+                }
+                this.setAttribute('class','on')
+            })
+        }
+    </script>
+    
+     <script>
+		function change_pid() {
+			var imgObj = document.getElementById("caocao_pid");
+			var Flag = (imgObj.getAttribute("src", 1) == "images/checks2.png")
+			imgObj.src = Flag ? "images/checks1.png" : "images/checks2.png";
+		}
+
+		function change_pix() {
+			var imgObj = document.getElementById("caocao_pix");
+			var Flag = (imgObj.getAttribute("src", 1) == "images/checks2.png")
+			imgObj.src = Flag ? "images/checks1.png" : "images/checks2.png";
+		}
+	</script>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>自我服务计时</title>
+<link rel="stylesheet" type="text/css" href="css/fuwujishi.css"/>
+<link rel="stylesheet" type="text/css" href="css/yuangongliebiao.css" />
+</head>
+<body onload="init();">
+<div id="pgcontainer">
+
+  <!--头部的开始-->
+  <header> 
+  
+    
+  </header>
+  <!--头部的结束-->
+  
+  <!--主题内容的开始-->
+  <div class="zymain">
+    <div class="zybts">
+    	
+    	
+    	 <div class="zwx">
+    	 	<div class="zw1x">
+    	 		<a style="font-size: 1.1rem;font-weight: 540;text-align: center;">服务倒计时</a>
+    	 		<div class="zws" >
+    	 			<div class="zwsa">分钟</div>
+    	 			<div class="zwsb">秒</div>
+    	 		</div>
+    	 		<a> <div id="showDiv" style="font-size: 1.8rem;margin-top: 1rem;"></div></a>
+    	 		
+    	 	</div>
+    	 </div>
+
+		  <div class="zw2x">
+		  	
+		  	<input class="zwa1" type="button" name="btn" id="click" type="submit" value="btn"/>
+        <input class="zwa2" type="button" name="btn1" id="click1" type="submit" value="btn1" disabled/>
+		  	<button class="zwa3">
+		  			<div class="boxx">
+				<a href="javascript:;" class="flipInX" style="text-decoration: none;">
+				<div class="yuanzcb" style="color: white;border: 0;">结束服务</div>
+				</a>
+				</div>
+		  	</button>
+		  </div>
+				
+      <div class="zw3x">
+      	<a><h1>开始服务时间：15:00</h1></a>
+        <a><h1>结束服务时间：15:00</h1></a>
+      </div>
+      
+      <div class="zwjx">
+      	<a href="pingjia.html" style="text-decoration: none;">发表评价</a>
+      </div>
+    </div>
+    
+  </div>
+  <!--主题内容的结束-->
+
+
+
+</div>
+   <div id="dialogBgx"></div>
+		<div id="dialogx" class="animatedx">
+			<div class="dialogTopx"></div>
+				<div class="yztx2">
+					是否结束服务？
+				</div>
+				
+				<div class="yztx3">
+					<div class="yztx3a">确定</div>
+					<a href="javascript:;" class="claseDialogBtnx">
+					<div class="yztx3b">取消</div>
+					</a>
+				</div>
+		           </div>
+ <script>
+            var time;    
+            var showDiv=document.getElementById("showDiv");
+            var btn=document.getElementById("click");
+            var btn1=document.getElementById("click1");
+            var m=120;
+            var s=50;
+            
+            
+            function init(){
+                showDiv.innerHTML="02:00";
+                btn.value="开始服务";
+                btn1.value="暂停服务";
+             }
+            
+            //如果点击开始之后btn显示"开始"
+            btn.onclick=function(){
+            	 btn1.disabled = false;
+              if(btn.value=="开始服务"){
+                  btn.value="已经开始";
+                    time=setInterval("run()",1000);
+              }else{
+                  btn.value="已经开始";
+               }
+            }
+            
+            
+           btn1.onclick=function(){
+           	if(btn1.value=="暂停服务"){
+           		btn1.value="继续服务";
+           		clearInterval(time);
+           	}else{
+           		btn1.value="暂停服务";
+           		time=setInterval("run()",1000);
+           	}
+           	}
+           
+         
+            //进行倒计时显示
+            function run(){
+                --s;
+                if(s<0){
+                    --m;
+                    s=59;
+                }
+                if(m<0){
+                    --h;
+                    m=m-1;
+                }
+                showDiv.innerHTML=m+":"+s;
+              console.log(showDiv);
+             
+               }
+       
+            
+        </script>
+</body>
+<!--顶部右侧点击向左移动js-->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script>
+
+var w,h,className;
+function getSrceenWH(){
+	w = $(window).width();
+	h = $(window).height();
+	$('#dialogBgx').width(w).height(h);
+}
+
+window.onresize = function(){  
+	getSrceenWH();
+}  
+$(window).resize();  
+
+$(function(){
+	getSrceenWH();
+	
+	//显示弹框
+	$('.boxx a').click(function(){
+		className = $(this).attr('class');
+		$('#dialogBgx').fadeIn(300);
+		$('#dialogx').removeAttr('class').addClass('animatedx '+className+'').fadeIn();
+	});
+	
+	//关闭弹窗
+	$('.claseDialogBtnx').click(function(){
+		$('#dialogBgx').fadeOut(300,function(){
+			$('#dialogx').addClass('bounceOutUp').fadeOut();
+		});
+	});
+});
+
+</script>
+</html>

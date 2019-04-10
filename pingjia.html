@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>理疗感受与评价</title>
+<link rel="stylesheet" type="text/css" href="css/tixian.css"/>
+
+</head>
+<body>
+<div id="pgcontainer">
+
+  <!--头部的开始-->
+  <header> 
+  <a class="fanhui" href="#"></a>
+  <strong style="margin-right: 15%;">评价</strong>
+  <a href="#" class="menubt"></a> 
+    
+  </header>
+  <!--头部的结束-->
+  
+  <!--主题内容的开始-->
+  <div class="zymain">
+    <div class="zybt1">
+    <div class="pingjia">
+    	<div class="pingjia1">
+    		<textarea  placeholder="请写下对服务人员感受吧，对他帮助很大哦~~"></textarea>
+    	</div>
+    </div>
+    <div class="pingjia2">
+    	<div class="pina">评价</div>
+    	<div class="pinb">
+    <div class="wrap">
+			<ul id="pro">
+				<li><img src="img/haoa.png" alt="" id="p"/><a style="font-size: 0.65rem;">好评</a></li>
+				<li><img src="img/chab.png" alt="" id="p1" /><a style="font-size: 0.65rem;">中评</a></li>
+				<li><img src="img/chab.png" alt=""  id="p2"/><a style="font-size: 0.65rem;">差评</a></li>
+			</ul>
+		</div>
+    	</div>
+    </div>
+ 
+ <div class="pingjia3">
+ 	发表评价
+ </div>
+ </div>
+    
+  </div>
+  
+
+</div>
+
+
+</body>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+			$("#pro>li").click(function(){
+//				$(this).src="img/1.png";
+				var i=$("#pro>li").index($(this));
+				if(i==0){
+					document.getElementById("p").src="img/haob.png";
+					document.getElementById("p1").src="img/chab.png";
+					document.getElementById("p2").src="img/chab.png";
+				}
+				if(i==1){
+					document.getElementById("p").src="img/haoa.png";
+					document.getElementById("p1").src="img/chaa.png";
+					document.getElementById("p2").src="img/chab.png";
+				}
+				if(i==2){
+					document.getElementById("p").src="img/haoa.png";
+					document.getElementById("p1").src="img/chab.png";
+					document.getElementById("p2").src="img/chaa.png";
+				}
+				
+				console.log(i)
+			})
+		</script>
+</html>

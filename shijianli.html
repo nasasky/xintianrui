@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>实际案例</title>
+<link rel="stylesheet" type="text/css" href="css/liliaoxiaoguo.css"/>
+<link href="css/demo.css" rel="stylesheet" />
+<script src="js/jquery-1.9.1.js"></script>
+<style>
+	body{
+		background: white;
+	}
+</style>
+</head>
+<body>
+<div id="pgcontainer">
+
+  <!--头部的开始-->
+  <header> 
+  <a class="fanhui" href="index.html"></a>
+  <strong>实际案例</strong>
+  <a href="index.html" class="menubtn"></a> 
+    
+  </header>
+  <!--头部的结束-->
+  
+  <!--主题内容的开始-->
+  <div class="zymain">
+    <div class="zybt">
+
+  			<div class="cgal_nr">
+					<div class="lanren">
+						<div class="hidden">
+						
+						<!--
+                        	li列表内容
+                        -->
+				<li>
+                <div class="liliao">
+                	<div class="liao">
+                		<a>标题理疗护身那些事,要于探索标题理疗护身那些事</a>
+                	</div>
+                	<div class="liaoa">
+                		<a>
+                			<img src="images/f2.jpg" />
+                		</a>
+                	</div>
+                </div>
+				</li>
+							 
+							 
+				<li>
+                <div class="liliao1">
+                	<div class="liao">
+                		<a>标题理疗护身那些事,要于探索标题理疗护身那些事</a>
+                	</div>
+                	<div class="liaoa">
+                		<a>
+                			<img src="images/f2.jpg"/>
+                		</a>
+                	</div>
+                </div>
+			</li>
+					       
+					       
+				<li>
+                <div class="liliao1">
+                	<div class="liao">
+                		<a>标题理疗护身那些事,要于探索标题理疗护身那些事</a>
+                	</div>
+                	<div class="liaoa">
+                		<a>
+                			<img src="images/f2.jpg" />
+                		</a>
+                	</div>
+                </div>
+				</li>
+					       
+				<li>
+                <div class="liliao1">
+                	<div class="liao">
+                		<a>标题理疗护身那些事,要于探索标题理疗护身那些事</a>
+                	</div>
+                	<div class="liaoa" >
+                		<a>
+                			<img src="images/f2.jpg" />
+                		</a>
+                	</div>
+                </div>
+				</li>
+							
+				<li>
+                <div class="liliao1" >
+                	<div class="liao" >
+                		<a>标题理疗护身那些事,要于探索标题理疗护身那些事</a>
+                	</div>
+                	<div class="liaoa" >
+                		<a>
+                			<img src="images/f2.jpg"  />
+                		</a>
+                	</div>
+                </div>
+				</li>
+							
+				<li>
+                <div class="liliao1">
+                	<div class="liao">
+                		<a>标题理疗护身那些事,要于探索标题理疗护身那些事</a>
+                	</div>
+                	<div class="liaoa">
+                		<a>
+                			<img src="images/f2.jpg" />
+                		</a>
+                	</div>
+                </div>
+				</li>
+							
+				<li>
+                <div class="liliao1">
+                	<div class="liao">
+                		<a>标题理疗护身那些事,要于探索标题理疗护身那些事</a>
+                	</div>
+                	<div class="liaoa">
+                		<a>
+                			<img src="images/f2.jpg"/>
+                		</a>
+                	</div>
+                </div>
+				</li>
+							
+
+						</div>
+						<ul class="list">数据加载中，请稍后...</ul>
+						<div class="more">
+							<a href="javascript:;" onClick="lanren.loadMore();">点击加载更多</a>
+						</div>
+					</div>
+				</div>
+  
+    </div>
+    
+  </div>
+  <!--主题内容的结束-->
+
+<!--底部的开始-->
+
+<!--footer开始-->
+
+
+
+<!--footer结束-->
+
+</div>
+
+<script>
+			var _content = []; //临时存储li循环内容
+			var lanren = {
+				_default: 5, //默认显示图片个数
+				_loading: 5, //每次点击按钮后加载的个数
+				init: function() {
+					var lis = $(".lanren .hidden li");
+					$(".lanren ul.list").html("");
+					for(var n = 0; n < lanren._default; n++) {
+						lis.eq(n).appendTo(".lanren ul.list");
+					}
+					$(".lanren ul.list img").each(function() {
+						$(this).attr('src', $(this).attr('realSrc'));
+					})
+					for(var i = lanren._default; i < lis.length; i++) {
+						_content.push(lis.eq(i));
+					}
+					$(".lanren .hidden").html("");
+				},
+				loadMore: function() {
+					var mLis = $(".lanren ul.list li ").length;
+					for(var i = 0; i < lanren._loading; i++) {
+						var target = _content.shift();
+						if(!target) {
+							$('.lanren .more').html("<p>全部加载完毕...</p>");
+							break;
+						}
+						$(".lanren ul.list").append(target);
+						$(".lanren ul.list img").eq(mLis + i).each(function() {
+							$(this).attr('src', $(this).attr('realSrc'));
+						});
+					}
+				}
+			}
+			lanren.init();
+		</script>
+</body>
+
+
+</html>

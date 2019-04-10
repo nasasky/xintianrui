@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>加盟申请</title>
+<link rel="stylesheet" type="text/css" href="css/gongsijiameng.css" />
+<link rel="stylesheet" href="css/anquanbaozhang.css" />
+<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+
+<link rel="stylesheet" href="css/LArea.css">
+</head>
+
+<body>
+        <header>
+			<a class="fanhui" href="huiyuancenter.html"></a>
+			<strong>加盟申请</strong>
+			<a href="in" class="menubtn"></a>
+
+		</header>
+		<div class="first" style="width: 90%;margin-left: 5%;margin-top: 1rem;">
+			<a>
+			<div class="gja1" style="background:#2576C8;">
+				<h1>公司加盟</h1>
+			</div>
+			</a>
+			<a href="gerenjiameng.html">
+			<div class="gja2x">
+				<h1>个人加盟</h1>
+			</div>
+			</a>
+		</div>
+
+		<div class="gja2">
+			<form>
+				<p><span> 法人姓名：<input id="text" placeholder="请输入法人的姓名"  required /></span></p>
+				<p><span> 公司名称：<input id="text" placeholder="请输入公司名称" required /></span></p>
+				<p><span> 公司地址：<input id="text" placeholder="请输入公司地址" required /></span></p>
+				
+				<p><span> 选择市区：<input id="demo1" placeholder="请选择省市区"  style="width: 53%;color: #757575;text-align:left;" type="text" readonly="" placeholder="" value="">
+									<input id="value1" type="hidden" value="20,234,504"></span></p>
+									
+									
+				<p><span> 联系电话：<input id="text" placeholder="请输入联系电话" required /></span></p>
+				<p><span> 太赫设备：<input id="text" placeholder="请输入设备数量" required /></span></p>
+				<span> 加盟原因：<p>
+    	<textarea id="text" placeholder="请输入您想加盟的原因" required  ></textarea></p></span>
+				<div class="gjb">
+			<a>
+			<h1>营业执照:</h1>
+			</a>
+					
+			<div id="addCommodityIndex">
+        <!--input-group start-->
+            <div class="input-group row">
+               
+                <div class="col-sm-9 big-photo">
+                	<div id="preview">
+				<div class="xx" onclick="$('#previewImg').click();">
+											<a>营业执照</a>
+											<p>点击上传</p>
+											<p>jpg/png格式</p>
+										</div>
+                      
+                     </div> 
+										 
+										 <div id="previe">
+										 <div class="x" onclick="$('#previewIm').click();">
+										 	<a>法人身份证</a>
+											<p >点击上传</p>
+											<p>jpg/png格式</p>
+										 </div>
+										 	</div>
+							</div>  
+                                        <input type="file" onchange="previewImage(this)" style="display: none;" id="previewImg">
+										<input type="file" onchange="previewImag(this)" style="display: none;" id="previewIm">
+										
+                	<!--<input id="uploaderInput" class="uploader__input" style="display: none;" type="file" accept="" multiple="">-->
+                </div>
+								
+							
+								
+            </div>
+				</div>
+
+		</div>
+		
+		<div class="db">
+  	<input id="button" type="submit" value="提交申请" style="float: left;color:white;font-size: 0.75rem; background: #2576C8;width: 90%;margin-left: 5%;border-radius:0.5rem ;height: 100%;">
+  </div>
+  </form>
+		<div class="last" style="width: 100%;height: 2rem;background: #EBEBEB;float: left;"></div>
+
+	</body>
+	
+<script type="text/javascript" src="js/gongsitupian.js" ></script>
+<script src="js/LAreaData1.js"></script>
+		<script src="js/LAreaData2.js"></script>
+		<script src="js/LArea.js"></script>
+		<script>
+			var area1 = new LArea();
+			area1.init({
+				'trigger': '#demo1', //触发选择控件的文本框，同时选择完毕后name属性输出到该位置
+				'valueTo': '#value1', //选择完毕后id属性输出到该位置
+				'keys': {
+					id: 'id',
+					name: 'name'
+				}, //绑定数据源相关字段 id对应valueTo的value属性输出 name对应trigger的value属性输出
+				'type': 1, //数据源类型
+				'data': LAreaData //数据源
+			});
+		</script>
+
+
+</html>

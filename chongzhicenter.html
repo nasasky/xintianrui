@@ -1,0 +1,316 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<title>充值中心</title>
+		<link rel="stylesheet" type="text/css" href="css/chongzhicenter.css" />
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+
+		<style>
+			/*.message{
+            background: none;
+            padding-top: 10%;
+        }
+        .message input {
+            width: 80%;
+            margin-left: 10%;
+            line-height: 1rem;
+            height: 2rem;
+            font-size: 0.6rem;
+           
+        }
+        .content form input:not(:nth-child(6)) {
+            border: 0;
+            
+        }
+           top: 82%;
+        }*/
+			
+			.cjxl ul {
+				width: 100%;
+			}
+			
+			.cjxl li {
+				float: left;
+				width: 33.3%;
+				text-align: center;
+				margin-top: 0.5rem;
+			}
+			
+			.cjxl input {
+				width: 4rem;
+				height: 2rem;
+				border-radius: 0.25rem;
+				font-size: 0.75rem;
+				background: white;
+				border: 0.05rem solid #EBEBEB;
+			}
+			
+			.cjxl input.on {
+				background-color: #2476C8;
+				color: white;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<div id="pgcontainer">
+
+			<!--头部的开始-->
+			<header style="background: white;">
+				<a class="fanhui" href="caifucenter.html"></a>
+				<strong>充值中心</strong>
+				<a href="chongzhiijilu.html" class="menubtn">充值记录</a>
+
+			</header>
+			<!--头部的结束-->
+
+			<!--主题内容的开始-->
+			<div class="zymain">
+				<div class="zybt">
+
+					<div class="jj">
+						<div class="czh">
+							<div class="czha">身份等级：尊贵VIP</div>
+							<div class="czhb">优惠价格： 100元/分钟</div>
+							<div class="czhc">
+								<p>可理疗时间：40分钟(折合200元)</p>
+								<p>奖励消费券：100元</p>
+								<p>体验赠券：15分钟</p>
+							</div>
+						</div>
+
+						<div class="cja" style="color: black;margin-left: 5%;margin-top: 0.5rem;float: left;">
+							<a>
+								<h1 style="font-size: 0.9rem;font-weight:200 ;">充值时长</h1>
+							</a>
+						</div>
+						<div class="cjb" style="width: 90%;margin-left: 5%;height: 11rem;box-shadow:0 3px 5px rgba(0,0,0,.3);background: white; float: left;">
+							<div class="cjxl" style="width: 100%;float: left;margin-top: 0.5rem;">
+								<ul>
+									
+									<li><p><input type="button" value="60分钟" ></input></p>
+									</li>
+									
+									<li><p><input type="button" value="120分钟"></p></li>
+									<li><p><input type="button" value="180分钟"></p></li>
+									<li><p><input type="button" value="240分钟"></p></li>
+									<li><p><input type="button" value="300分钟"></p></li>
+									<!--<li><input type="button" value="340分钟"></li>-->
+								</ul>
+							</div>
+
+							<div class="cza" style="float: left; width: 100%;height: 1rem;margin-top: 1rem;">
+								<div class="cza1" style="float: left; width: 90%;margin-left: 5%; height: 1rem;margin-top: 0.5rem;">
+									<div class="cza2" style="width: 35%;height: 1rem;color: black;line-height: 1rem;">
+										<a>
+											<h1 style="font-size: 0.7rem;font-weight:200 ;">自定义充值:</h1></a>
+									</div>
+									<div class="cza3" style="float: left; width: 60%;margin-left: 35%;height: 1.2rem;margin-top: -1rem;">
+
+										<div class="cza4" style="float: left; width: 100%;margin-left: 5%;height: 0.6rem;height: 1.2rem;">
+											<p><input type="text" placeholder="请输入充值时长，单位分钟" name="username" style="font-size: 0.6rem;" /></p>
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="czjin">充值金额：200</div>
+						<div class="czlast" style="width: 90%;height: 5rem;">
+
+							<div class="czb" style="float: left; width: 100%;height: 5rem;">
+								<div class="czb1" style="float: left;width: 90%;margin-left: 5%;margin-top: 20px;height: 2rem;">
+									<div class="czwwe" style="width: 100%;height: 4rem;float: left;">
+										<div class="czwwea" style="width: 100%;height: 2rem;float: left;">
+										<div class="pinc">
+										<div class="pinimg">
+										<img src="images/checks2.png" class="wujiang_pic_size" id="caocao_pid" onClick="change_pid()">
+										</div>
+										<p>奖励消费券充值100元</p>
+										</div>
+										</div>
+										
+										
+										<div class="czwweb" style="width: 100%;height: 2rem;float: left;">
+										<div class="pinc">
+										<div class="pinimg">
+										<img src="images/checks2.png" class="wujiang_pic_size" id="caocao_pix" onClick="change_pix()">
+										</div>
+										<p>微信充值100元</p>
+										</div>
+										</div>
+										
+										
+									</div>
+
+									<div class="czb2">
+										<div class="czc">
+										
+											<label><input name="ssx"  type="checkbox" onclick="agree();" id="cb" style=" float: left; width: 1.2rem;height: 1.2rem; "></label>
+									
+										</div>
+										<div class="czc1" style="float: left;width: 100%;margin-left: 1.5rem;height: 0.7rem;margin-top: -0.5rem;">
+											<a>
+												<h1 style=" font-size: 0.6rem;line-height: 0.7rem;color: black;">我已阅读并同意《充值协议》，<a href="xieyi.html" style="text-decoration: underline;color:#2576C8 ;">点击查看协议</a></h1></a>
+										</div>
+									</div>
+									<div class="box">
+										
+								<div class="czbb" style="float: left;width: 100%;height: 2rem;margin-top: 1rem;margin-left: 5%;margin-bottom: 2rem;">
+						      <a href="javascript:;" class="bounceInDown">
+				            <p><button type="submit" disabled="disabled" id="tj"  >确认充值</button></p>
+		                   </a> 
+			              <div id="dialogBg"></div>
+		                     <div id="dialog" class="animated">
+			                   <div class="dialogTop">
+			                   	
+				               
+			                </div>
+			                <div class="diaxx">
+			                	<h1>通知</h1>
+			                	<div class="diaxx1">
+			                		<p>
+			                			本次充值时长为40分钟，需支付总额为800元，其中奖励消费券支付100元。
+			                		</p>
+			                	</div>
+			                	<div class="diaxx2">
+			                		<div class="diaxx2a">
+			                			确定
+			                		</div>
+			                		<a href="javascript:;" class="claseDialogBtn" style="text-decoration: none;font-size:0.75rem;color: black;">
+			                		<div class="diaxx2b">
+			                			关闭
+			                		</div>
+			                		</a>
+			                	</div>
+			                </div>
+			                          </div>             
+			                          
+	 								</div>
+									</div>
+									
+									
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+	
+
+	</div>
+</body>
+	<script>
+		var list = document.getElementsByTagName('input');
+		for(let i = 0; i < 6; i++) {
+			list[i].addEventListener('click', function() {
+				for(let i = 0; i <6; i++) {
+					list[i].removeAttribute('class');
+				}
+				this.setAttribute('class', 'on')
+				$("button").addClass("submit");
+			})
+		}
+	</script>
+	<script>
+		function agree(){
+       if(document.getElementById('cb').checked)
+          document.getElementById('tj').disabled=false;
+             
+            
+              
+    else
+        document.getElementById('tj').disabled='disabled';  
+  }   
+	</script>
+
+	<script>
+		function change_pid() {
+			var imgObj = document.getElementById("caocao_pid");
+			var Flag = (imgObj.getAttribute("src", 1) == "images/checks2.png")
+			imgObj.src = Flag ? "images/checks1.png" : "images/checks2.png";
+		}
+
+		function change_pix() {
+			var imgObj = document.getElementById("caocao_pix");
+			var Flag = (imgObj.getAttribute("src", 1) == "images/checks2.png")
+			imgObj.src = Flag ? "images/checks1.png" : "images/checks2.png";
+		}
+	</script>
+	
+	<script>
+        /* 声明一个数组用来存input值 */
+        var array = [""];
+        /*方法调用*/
+        inputFn("p:nth-child(1) input", 0);
+       
+        /* 方法封装 */
+        /*键盘弹起时实时生效*/
+        function inputFn(ele, num) {
+            $(ele).keyup(function(){
+                var val = $(this).val().trim();
+                console.log(val);
+                array[num] = val;
+                inputArray();
+            });
+        }
+        /*遍历数组，判断input值是否存在于数组中*/
+        function inputArray() {
+            for (var i = 0, arrayLen = array.length; i < arrayLen; i++) {
+                //  如果值不在数组中 就返回 并 去掉颜色
+                if (array[i] == "" ||　array[i] == null) {
+                    $("button").removeClass("submit");
+                    console.log(array[i] + "无法提交" + i)
+                    return;
+                }
+            }
+            //
+            $("button").addClass("submit");
+        }
+        
+    </script>
+
+<script type="text/javascript">
+var w,h,className;
+function getSrceenWH(){
+	w = $(window).width();
+	h = $(window).height();
+	$('#dialogBg').width(w).height(h);
+}
+
+window.onresize = function(){  
+	getSrceenWH();
+}  
+$(window).resize();  
+
+$(function(){
+	getSrceenWH();
+	
+	//显示弹框
+	$('.box a').click(function(){
+		className = $(this).attr('class');
+		$('#dialogBg').fadeIn(300);
+		$('#dialog').removeAttr('class').addClass('animated '+className+'').fadeIn();
+	});
+	
+	//关闭弹窗
+	$('.claseDialogBtn').click(function(){
+		$('#dialogBg').fadeOut(300,function(){
+			$('#dialog').addClass('bounceOutUp').fadeOut();
+		});
+	});
+});
+</script>
+
+</html>

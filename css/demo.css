@@ -1,0 +1,51 @@
+﻿
+
+#dreg {
+	margin:0 auto;
+	opacity:0.7
+	
+}
+
+a{ text-decoration:none;
+}
+
+.regitem{
+	width: 100%;
+	height:1.5rem;
+    margin-top:10px;
+   text-align: center;
+}
+.regitem1{
+	width: 100%;
+	height:1.5rem;
+     text-align: center;
+   float: left;
+   background: #F8F7FB;
+}
+
+.regitem span{
+	font-size: 0.65rem;
+    display:inline-block;
+    font-weight: 500;
+    
+}
+.regitem1 span{
+	font-size: 0.65rem;
+    display:inline-block;
+    font-weight: 500;
+    
+}
+
+
+#city{display:inline}
+
+#city select{
+      font-size: 0.65rem;
+	   border-radius:3px;
+	    border: 0rem;
+	   height: 1.5rem;
+	   font-weight: 500;
+	   background: #F5F4F9;
+	   
+}
+

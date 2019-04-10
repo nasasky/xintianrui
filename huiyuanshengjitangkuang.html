@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<title>会员升级</title>
+		<link rel="stylesheet" type="text/css" href="css/huiyuanshengji.css" />
+       <script type="text/javascript" src="js/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<div id="pgcontainer">
+	
+<div id="modal">
+    <div class="mask" style="background: #909090;">
+    		
+    </div>
+    <!-- 这里开始才是真正的内容 -->
+    <div class="dialog">
+    	<div class="zhezhao">
+    		<div class="hyc">
+    			<div class="zhey">
+    			<img src="images/trues.png" style="width: 100%;height: 100%;" />
+    		</div>
+           恭喜，升级成功 !
+    		</div>
+    		
+    		<div class="zhex">
+    			<a href="huiyuancenter.html">
+    			<img src="images/x.png" style="width: 100%;height: 100%;" />
+    			</a>
+    		</div>
+    		<div class="wen" style="text-align: center;">
+    			您已由贵宾VIP上级为超级VIP用户
+    		</div>
+    		
+    		
+    	</div>
+    </div>
+</div>
+	
+
+		</div>
+
+		<script>
+			function validatelt(inputelement, err) {
+				if(inputelement.validity.patternMismatch) {
+					inputelement.setCustomValidity(err);
+
+				} else {
+					inputelement.setCustomValidity("");
+					return true;
+				}
+			}
+		</script>
+	</body>
+
+</html>

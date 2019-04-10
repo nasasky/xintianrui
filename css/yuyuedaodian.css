@@ -1,0 +1,508 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+/*全局样式*/
+
+body {
+	font-family: "微软雅黑";
+	font-size: 12px;
+	color: #333;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+html {
+	font-size: 20px;
+}
+
+@media only screen and (min-width: 401px) {
+	html {
+		font-size: 25px !important;
+	}
+}
+
+@media only screen and (min-width: 428px) {
+	html {
+		font-size: 26.75px !important;
+	}
+}
+
+@media only screen and (min-width: 481px) {
+	html {
+		font-size: 30px !important;
+	}
+}
+
+@media only screen and (min-width: 569px) {
+	html {
+		font-size: 35px !important;
+	}
+}
+
+@media only screen and (min-width: 641px) {
+	html {
+		font-size: 40px !important;
+	}
+}
+
+.clear {
+	clear: both;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+img {
+	border: 0px;
+	max-width: 100%;
+}
+
+.dbgao {
+	height: 80px;
+}
+
+关于我们 a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	outline: 0;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+html {
+	overflow-y: scroll
+}
+
+
+/* page structure */
+
+header {
+	display: block;
+	width: 100%;
+	height: 55px;
+	text-align: center;
+}
+
+header strong {
+	font-size: 1rem;
+	color: #FFF;
+	line-height: 55px;
+	color: black;
+	font-weight: 100;
+}
+
+.menubtn {
+	position: relative;
+	z-index: 101;
+	text-decoration: none;
+	background-image: url(../images/nav.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 55px;
+	float: right;
+	margin-right: 10px;
+}
+
+a.fanhui {
+	width: 20px;
+	height: 55px;
+	float: left;
+	margin-left: 10px;
+	background: url(../images/back.png) no-repeat center;
+}
+
+.zymain {
+	width: 100%;
+	height: auto;
+}
+
+.zybt {
+	width: 100%;
+	margin: 10px 0px;
+}
+
+.gw_num {
+	border: 1.5px solid #999999;
+	width: 80px;
+	line-height: 22px;
+	overflow: hidden;
+}
+
+.gw_num em {
+	display: block;
+	height: 25px;
+	width: 22px;
+	float: left;
+	color: #7A7979;
+	border-right: 1.5px solid #999999;
+	text-align: center;
+	cursor: pointer;
+	font-style: normal;
+}
+
+.gw_num .num {
+	display: block;
+	float: left;
+	text-align: center;
+	width: 30px;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 24px;
+	border: 0;
+}
+
+.gw_num em.add {
+	float: right;
+	border-right: 0;
+	border-left: 1.5px solid #999999;
+}
+
+.chscx {
+	position: relative;
+	line-height: 2rem
+}
+
+.yykai input[type="radio"] {
+	width: 1rem;
+	height: 1rem;
+	opacity: 0;
+}
+
+.yykai label {
+	position: absolute;
+	left: 0.3rem;
+	top: 0.5rem;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	border: 0.05px solid black;
+}
+
+
+/*设置选中的input的样式*/
+
+
+/* + 是兄弟选择器,获取选中后的label元素*/
+
+.yykai input:checked+label {
+	background-color: #2476C8;
+	border: 0.1px solid white;
+}
+
+.yykai input:checked+label::after {
+	position: absolute;
+	content: "";
+	width: 0.25rem;
+	height: 0.5rem;
+	top: 0.1rem;
+	left: 0.3rem;
+	border: 2px solid white;
+	border-top: none;
+	border-left: none;
+	transform: rotate(45deg)
+}
+
+.yykai span {
+	font-size: 0.65rem;
+	margin-left: 0.5rem;
+}
+
+.yyx{
+	width: 100%;height: 2rem;float: left;background: #EBEBEB;
+}
+.yyx p{
+	 margin-left: 5%;float: left;font-size: 0.8rem;line-height: 2rem;
+}
+.jsselect {
+	width: 90%;
+	height: 1.5rem;
+	float: left;
+	margin-left: 5%;
+	margin-top: 0.5rem;
+	
+}
+.wrap{
+	width: 100%;
+	height: 1.5rem;
+}
+.wrap ul li{
+	width: 30%;
+	height: 1.5rem;
+	float: left;
+	list-style: none;
+}
+.wrap ul li img{
+	display: inline-block;
+	width: 1.2rem;
+	height: 1.2rem;
+}
+.yya{
+	 width: 90%;margin-left: 5%;height: 1.5rem;float: left;border-bottom: 0.05rem solid #EBEBEB;
+}
+.yya h1{
+	float: left; color: black;font-size:0.7rem;font-weight: 500;line-height: 1.5rem;
+}
+.yya h2{
+	float: left; color: black;font-size:0.7rem;font-weight: 500;line-height: 1.5rem;margin-left: 3%;
+}
+.yya1x{
+	width: 90%;margin-left: 5%;height: 1.5rem;float: left;border-bottom: 0.05rem solid #EBEBEB;
+}
+.yya1x h1{
+	float: left; color: black;font-size:0.7rem;font-weight: 500;line-height: 1.5rem;
+}
+.yya1x h2{
+	 float: left; color: black;font-size:0.7rem;font-weight: 500;line-height: 1.5rem;margin-left: 3%;
+}
+.yya2{
+	 width: 90%;margin-left: 5%;height: 3rem;float: left;border-bottom: 0.05rem solid #EBEBEB;
+}
+.yya2 h1{
+	float: left; color: black;font-size:0.7rem;font-weight: 500;line-height: 1.5rem;
+}
+.yyaa{
+	 width: 70%;float: left;margin-left: 1%;height: 3rem;
+}
+.yyaa h2{
+	 float: left; color: black;font-size:0.7rem;font-weight: 500;margin-left: 3%;
+}
+.yyad{
+	 width: 90%;margin-left: 5%;height: 1.5rem;float: left;
+}
+.yyad h1{
+	 float: left; color: black;font-size:0.7rem;font-weight: 500;line-height: 1.5rem;
+}
+.yyad h2{
+	float: left; color: black;font-size:0.7rem;font-weight: 500;line-height: 1.5rem;margin-left: 3%;
+}
+.yyb{
+	width: 90%;margin-left: 5%;float: left;margin-top: 0.5rem;
+}
+.yyb1{
+	 width: 100%;height: 3.5rem;float: left;border-bottom: 0.05rem solid #EBEBEB;
+}
+.yyb1 h1{
+	 float: left; color: black;font-size:0.7rem;font-weight: 500;line-height: 1.5rem;
+}
+.yyb1 h2{
+	 float: left; color: black;font-size:0.7rem;font-weight: 500;line-height: 1.5rem;margin-left: 3%;
+}
+.yyba{
+	 float: left;width: 85%;height: 2rem;
+}
+.yyba h3{
+	 float: left; color: black;font-size:0.7rem;font-weight: 500;
+}
+.yyback1{
+	width:2rem;float: right;height: 2rem;margin-top: -1rem;
+}
+.yyb2{
+	width: 100%;height: 2.5rem;float: left;border-bottom: 0.05rem solid #EBEBEB;
+}
+.yyb2 h1{
+	float: left; color: black;font-size:0.7rem;font-weight: 500;line-height:2.5rem;
+}
+.yyb2 h2{
+	float: left; color: black;font-size:0.7rem;font-weight: 500;line-height: 2.5rem;margin-left: 3%;
+}
+.yyback{
+	float: right;margin-top: 0.5rem;
+}
+.yyb3{
+	 width: 100%;height: 2.5rem;float: left;border-bottom: 0.05rem solid #EBEBEB;
+}
+.yyj{
+	float: right;width: 25%;height: 2rem;margin-top: 0.5rem;
+}
+.yyb3 h1{
+	float: left; color: black;font-size:0.7rem;font-weight: 500;line-height: 2.5rem;
+}
+.yyxak{
+	width: 80%;float: left;margin-left: 10%;height: 2rem;
+}
+.yyxbz{
+	 width: 100%;height: 2rem;float: left;background: #EBEBEB;
+}
+.yyxbz p{
+	margin-left: 5%;float: left;font-size: 0.8rem;line-height: 2rem;
+	
+}
+.yyf{
+	width: 90%;margin-left: 5%;height: 3.5rem;float: left;
+}
+.yybzhu{
+	width: 90%;float: left;height: 2.5rem;position: absolute;margin-top: 0.5rem;
+}
+.yyxbt{
+	width: 100%;height: 5rem;float: left;background: #EBEBEB;
+}
+.yybt{
+	 width: 90%;margin-left: 5%;float: left;margin-top: 1rem;height: 2rem;
+}
+.yylast{
+	width: 100%;float: left;margin-top: 0.5rem;height: 4rem;background: white;
+}
+.yyxa{
+	width: 90%;float: left;margin-left: 5%;height: 4rem;
+}
+.yyxt{
+	 width: 2.5rem;height: 2.5rem;margin-top: 0.75rem;float: left;margin-left: 1rem;border-radius:2.5rem ;
+}
+.yyxc{
+	width: 8rem;height: 3rem;float: left;margin-left: 0.5rem;margin-top: 0.5rem;
+}
+.yyx{
+	 width: 100%;height: 2rem;float: left;background: #EBEBEB;
+}
+.yyb{
+	width: 90%;margin-left: 5%;float: left;margin-top: 0.5rem;
+}
+.yybax{
+	width: 100%;height: 3.5rem;float: left;border-bottom: 0.05rem solid #EBEBEB;
+}
+.yybax h1{
+	 float: left; color: black;font-size:0.7rem;font-weight: 500;line-height: 1.5rem;
+}
+.yybax h2{
+	 float: left; color: black;font-size:0.7rem;font-weight: 500;line-height: 1.5rem;margin-left: 3%;
+}
+.yybbx{
+	 float: left;width: 85%;height: 2rem;
+}
+.yybbx h3{
+    float: left; color: black;font-size:0.7rem;font-weight: 500;	
+}
+
+.yyb2{
+	 width: 100%;height: 2.5rem;float: left;border-bottom: 0.05rem solid #EBEBEB;
+}
+.yyb3{
+	width: 100%;height: 2.5rem;float: left;border-bottom: 0.05rem solid #EBEBEB;
+}
+.yyxkd{
+	width: 100%;height: 2rem;float: left;background: #EBEBEB;
+}
+.yyxkd p{
+	margin-left: 5%;float: left;font-size: 0.8rem;line-height: 2rem;
+}
+.yyxdk{
+	 width: 80%;float: left;margin-left: 10%;height: 2rem;
+}
+.yykai{
+	 width: 5rem;height: 2rem;margin-left: 5%;float: left;
+}
+.yyxk{
+	width: 100%;height: 2rem;float: left;background: #EBEBEB;
+}
+.yyxk p{
+	margin-left: 5%;float: left;font-size: 0.8rem;line-height: 2rem;
+}
+.pincf{
+	width: 1.8rem;height:1.8rem;float: left;margin-left: 0.5rem;
+}
+.pincf1 {
+	 width: 2rem;height:1.8rem;float: left;font-size: 0.75rem;line-height: 1.3rem;
+}

@@ -1,0 +1,312 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>服务计时</title>
+<link rel="stylesheet" type="text/css" href="css/fuwujishi.css"/>
+<link rel="stylesheet" type="text/css" href="css/yuangongliebiao.css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+</head>
+<body onload="init();">
+<div id="pgcontainer">
+
+  <!--头部的开始-->
+  <header> 
+  <a class="fanhui" href="#"></a>
+  <strong>服务计时</strong>
+  <a href="#" class="menubtn"></a> 
+    
+  </header>
+  <!--头部的结束-->
+      <div class="gk" style="width: 90%;margin-left: 5%; float: left;">
+	  <a>
+	  	<h1 style="color: black;line-height: 0.8rem;text-align: left;font-size: 0.6rem;font-weight: 400;margin-bottom: 0.5rem;">服务标准化是以服务活动作为标准化对象，其研究范围
+包括国民经济行业中的全部服务活动。开展服务标准化
+工作，有利于规范各服务行业市场秩序、提高服务质量
+增强服务企业核心竞争力为构建和谐社会提供有利的技
+术支撑。</h1>
+	  </a>
+	  </div>
+  <!--主题内容的开始-->
+  <div class="zymain">
+    <div class="zybt">
+    	  
+			<div class="fwa">
+						
+				<div class="zw">
+    	 	<div class="zw1">
+    	 		<a style="font-size: 1.1rem;font-weight: 540;text-align: center;">服务倒计时</a>
+    	 		<div class="zws" >
+    	 			<div class="zwsa">分钟</div>
+    	 			<div class="zwsb">秒</div>
+    	 		</div>
+    	 		<a> <div id="showDiv" style="font-size: 1.8rem;margin-top: 1rem;"></div></a>
+    	 		
+    	 	</div>
+    	 </div>
+							
+							
+				<div class="zw2">
+		  	<input class="zwa1" type="button" name="btn" id="click" type="submit" value="btn"/>
+        <input class="zwa2" type="button" name="btn1" id="click1" type="submit" value="btn1" disabled/>
+		  	<button class="zwa3">
+		  	<div class="boxx">
+				<a href="javascript:;" class="flipInX" style="text-decoration: none;">
+				<div class="yuanzcb" style="color: white;border: 0;">结束服务</div>
+				</a>
+				</div>
+		  		
+		  	</button>
+		  </div>
+				
+      <div class="zw3">
+      	<a><h1>开始服务时间：15:00</h1></a>
+        <a><h1>结束服务时间：15:00</h1></a>
+      </div>
+
+							<div class="fwa4">
+								<a>
+									<button style="width: 100%;height: 100%;background: #2576C8;border-radius:10px ;border: 0px;color: white;font-size: 0.7rem;">
+	    					提醒顾客
+	    				</button>
+								</a>
+							</div>
+						</div>	
+				
+				
+   
+    <div class="fj" style="float: left;border: 0.05rem solid #EBEBEB; width: 90%;margin-left: 5%;height: auto; margin-top: 1rem;border-radius:0.25rem ;">
+    	
+    	<div class="container">
+            <!--    照片添加    -->
+            <div class="z_photo" id="z_photo">
+                <div class="z_file">
+                    <input class="huodong-msg" type="file" name="file" id="file" value="" accept="image/jpg,image/jpeg,image/png" multiple onchange="imgChange('z_photo','z_file');" />
+                </div>
+            </div>
+
+            <!--遮罩层-->
+            <div class="z_mask">
+                <!--弹出框-->
+                <div class="z_alert">
+                    <p>确定要删除这张图片吗？</p>
+                    <p>
+                        <a class="z_cancel" >取消</a>
+                        <a class="z_sure" >确定</a>
+                    </p>
+                </div>
+            </div>
+            
+            
+            <div class="fwjias">
+            	<textarea placeholder="请你输入你要说明的名字"></textarea>
+            </div>
+            <div class="fjbutton" >
+            	<a>
+            		<button>发送给顾客</button>
+            	</a>
+            </div>
+        </div>
+    	
+    </div>
+    </div>
+    
+  </div>
+
+</div>
+
+ <div id="dialogBgx"></div>
+		<div id="dialogx" class="animatedx">
+			<div class="dialogTopx"></div>
+				<div class="yztx2">
+					是否结束服务？
+				</div>
+				
+				<div class="yztx3">
+					<div class="yztx3a">确定</div>
+					<a href="javascript:;" class="claseDialogBtnx">
+					<div class="yztx3b">取消</div>
+					</a>
+				</div>
+		           </div>
+
+  <script type="text/javascript">
+            //px转换为rem
+          
+
+            function imgChange(obj1, obj2) {
+                var fileNum1 = 0;
+                var fileNum2 = event.target.files.length;
+                var a = document.getElementById("z_photo"),
+                    b = a.getElementsByTagName("div");
+                fileNum1 = b.length;
+                var j = fileNum1 + fileNum2 - 1;
+                //上传图片个数限制
+                if(fileNum1 > 3 || j > 3) {
+                    alert("最多只能上传5张图片！");
+                    return;
+                }
+                //获取点击的文本框
+                var file = document.getElementById("file");
+                //存放图片的父级元素
+                var imgContainer = document.getElementsByClassName(obj1)[0];
+                //获取的图片文件
+                var fileList = file.files;
+                //文本框的父级元素
+                var input = document.getElementsByClassName(obj2)[0];
+                var imgArr = [];
+                //遍历获取到得图片文件
+                for(var i = 0; i < fileList.length; i++) {
+                    var imgUrl = window.URL.createObjectURL(file.files[i]);
+                    imgArr.push(imgUrl);
+                    var img = document.createElement("img");
+                    img.setAttribute("src", imgArr[i]);
+                    var imgAdd = document.createElement("div");
+                    var imgAddInput = document.createElement("input");
+                    imgAddInput.setAttribute("type", "hidden");
+                    imgAddInput.setAttribute("value", imgArr[i]);
+                    imgAdd.appendChild(imgAddInput);
+                    imgAdd.setAttribute("class", "z_addImg");
+                    imgAdd.appendChild(img);
+                    imgContainer.appendChild(imgAdd);
+
+                };
+                file.classList.add("z_cl");
+                imgRemove();
+            };
+            
+            //删除图片
+            function imgRemove() {
+                var imgList = document.getElementsByClassName("z_addImg");
+                var mask = document.getElementsByClassName("z_mask")[0];
+                var cancel = document.getElementsByClassName("z_cancel")[0];
+                var sure = document.getElementsByClassName("z_sure")[0];
+                var file = document.getElementById("file");
+                for(var j = 0; j < imgList.length; j++) {
+                    imgList[j].index = j;
+                    imgList[j].onclick = function() {
+                        var t = this;
+                        mask.style.display = "block";
+                        cancel.onclick = function() {
+                            mask.style.display = "none";
+                        };
+                        sure.onclick = function() {
+                            mask.style.display = "none";
+
+                            if(file.classList.contains("z_cl")) {
+                                file.outerHTML = file.outerHTML;
+                            }
+
+                            t.parentNode.removeChild(t);
+                            file.classList.remove("z_cl");
+                        };
+
+                    }
+                };
+            };
+
+            
+        </script>
+
+<script>
+            var time;    
+            var showDiv=document.getElementById("showDiv");
+            var btn=document.getElementById("click");
+            var btn1=document.getElementById("click1");
+            var m=01;
+            var s=00;
+            
+            
+            function init(){
+                showDiv.innerHTML="01:00";
+                btn.value="开始服务";
+                btn1.value="暂停服务";
+             }
+            
+            //如果点击开始之后btn显示"开始"
+            btn.onclick=function(){
+            	 btn1.disabled = false;
+              if(btn.value=="开始服务"){
+                  btn.value="已经开始";
+                    time=setInterval("run()",1000);
+              }else{
+                  btn.value="已经开始";
+               }
+            }
+            
+            
+           btn1.onclick=function(){
+           	if(btn1.value=="暂停服务"){
+           		btn1.value="继续服务";
+           		clearInterval(time);
+           	}else{
+           		btn1.value="暂停服务";
+           		time=setInterval("run()",1000);
+           	}
+           	}
+           
+         
+            //进行倒计时显示
+            function run(){
+                --s;
+                if(s<0){
+                    --m;
+                    s=59;
+                }
+                
+                
+                
+                if(m<0){
+                    --h;
+                    m=m-1;
+                  
+                }
+                
+                
+                
+                showDiv.innerHTML=m+":"+s;
+              console.log(showDiv);
+             
+               }
+       
+            
+        </script>
+</body>
+<script>
+
+var w,h,className;
+function getSrceenWH(){
+	w = $(window).width();
+	h = $(window).height();
+	$('#dialogBgx').width(w).height(h);
+}
+
+window.onresize = function(){  
+	getSrceenWH();
+}  
+$(window).resize();  
+
+$(function(){
+	getSrceenWH();
+	
+	//显示弹框
+	$('.boxx a').click(function(){
+		className = $(this).attr('class');
+		$('#dialogBgx').fadeIn(300);
+		$('#dialogx').removeAttr('class').addClass('animatedx '+className+'').fadeIn();
+	});
+	
+	//关闭弹窗
+	$('.claseDialogBtnx').click(function(){
+		$('#dialogBgx').fadeOut(300,function(){
+			$('#dialogx').addClass('bounceOutUp').fadeOut();
+		});
+	});
+});
+
+</script>
+
+</html>

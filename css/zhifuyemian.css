@@ -1,0 +1,117 @@
+@charset "utf-8";
+/* CSS Document */
+/*全局样式*/
+body { font-family:"微软雅黑"; font-size:12px; color:#333;background: #F5F4F9;}
+* { margin:0px; padding:0px; list-style:none;}
+
+
+html {
+    font-size : 20px;
+}
+@media only screen and (min-width: 401px){
+    html {
+        font-size: 25px !important;
+    }
+}
+@media only screen and (min-width: 428px){
+    html {
+        font-size: 26.75px !important;
+    }
+}
+@media only screen and (min-width: 481px){
+    html {
+        font-size: 30px !important; 
+    }
+}
+@media only screen and (min-width: 569px){
+    html {
+        font-size: 35px !important; 
+    }
+}
+@media only screen and (min-width: 641px){
+    html {
+        font-size: 40px !important; 
+    }
+}
+
+.clear { clear:both;}
+
+.fl { float:left;}
+.fr { float:right; }
+ul { list-style:none; margin:0px; padding:0px;}
+img { border:0px; max-width:100%;}
+.dbgao { height:80px;}
+
+
+关于我们
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;vertical-align:baseline;outline:0;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+html{overflow-y:scroll}
+/* page structure */
+header{display:block;width:100%;height:55px;text-align:center;}
+header strong {font-size:1rem; color:#FFF; line-height:55px;color: black; font-weight: 100;}
+.menubtn{position:relative;z-index:101;text-decoration:none;background-position: center center; background-repeat:no-repeat; width:30px; height:55px; float:right;  margin-right:10px;}
+a.fanhui { width:20px; height:55px; float:left; margin-left:10px; background:url(../images/back.png) no-repeat center;}
+
+.zymain { width:100%; height:auto;}
+.zybt { width:100%; height:auto;  margin:10px 0px; }
+
+h3.title {
+            color: #F2AE11;
+            font-size: 0.7rem;
+            margin-bottom: 3rem;
+            text-align: center;
+            font-weight: 500;
+            line-height: 1.1;
+        }
+        h3.title span {
+            display: block;     /*设置为块级元素会独占一行形成上下居中的效果*/
+            font-size: 0.8rem;
+            color: #212121;
+            position: relative;   /*定位横线（当横线的父元素）*/
+        }
+        h3.title span:before, h3.title span:after {
+            content: '';                 /*CSS伪类用法*/
+            position: absolute;         /*定位背景横线的位置*/
+            top: 52%;
+            background: #783102;       /*宽和高做出来的背景横线*/
+            width: 20%;
+            height: 2px;
+        }
+        h3.title span:before{
+            left: 15%;        /*调整背景横线的左右距离*/
+        }
+        h3.title span:after {
+            right: 15%;
+        }
+        
+.zya h1{
+	float: left; font-size: 0.8rem;color: black;font-weight: 500;margin-top: 0.5rem;
+}
+.zya h2{
+	float: left;font-size: 0.8rem;color: black;margin-top: 0.5rem;margin-left: 1rem;font-weight: 500;
+}
+
+.zya1 h1{
+	float: left; font-size: 0.8rem;color: black;font-weight: 500;margin-top: 0.5rem;
+}
+.zya1 h2{
+	float: left;font-size: 0.8rem;color: black;margin-top: 0.5rem;margin-left: 1rem;font-weight: 500;
+}
+
+.zya2 h1{
+	float: left; font-size: 0.8rem;color: black;font-weight: 500;margin-top: 0.5rem;
+}
+.zya2 h2{
+	float: left;font-size: 0.8rem;color: black;margin-top: 0.5rem;margin-left: 1rem;font-weight: 500;
+}
+.zya3 h1{
+	float: left; font-size: 0.8rem;color: black;font-weight: 500;margin-top: 0.5rem;
+}
+.zya3 h2{
+	float: left;font-size: 0.8rem;color: black;margin-top: 0.5rem;margin-left: 1rem;font-weight: 500;
+}
+
+
+.zya4 button{
+	float: left; width: 32.3%;margin-left: 1%; height: 100%;color: red;border-radius:0.25rem;background: none;border: 0.05rem solid #CBCBCB;font-size: 0.6rem;
+}

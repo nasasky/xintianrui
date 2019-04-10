@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>理疗时长</title>
+<link rel="stylesheet" type="text/css" href="css/bangjucenter.css"/>
+<link rel="stylesheet" type="text/css" href="css/dianzhuhoutai.css" />
+<link rel="stylesheet" type="text/css" href="css/yuangongliebiao.css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<style>
+	.dzg5a {
+   
+    width: 90%;
+}
+#modal {
+   
+    z-index: 9999;
+}
+.yuanzcb {
+    
+    font-size: 0.7rem;
+    
+}
+</style>
+</head>
+<body>
+<div id="pgcontainer">
+<div id="modal">
+   
+    <!-- 这里开始才是真正的内容 -->
+    <div class="dialog">
+    	<div class="zhezha" style="height: 11rem;">
+    		<form action="shoufeitixing.html">
+    	<div class="zz">
+    		请输入理疗时长：  <label><input type="text" name=""  style="font-size: 0.75rem;" required="required"  placeholder="请输入" oninvalid="setCustomValidity('请输入时间')"  oninput="setCustomValidity('')"></label>分钟
+    	</div>
+    	
+    	<div class="dzda"  style="margin-bottom: 6.5rem;margin-top: 0;">
+		<div class="dzda1">
+		<div class="dzg5">
+	
+    <div class="dzg5a">
+    	 
+        <input class="radio" id="item4" type="checkbox"  value="选项一" checked>
+        <label for="item4"></label>
+       <span>到店签到 ，无条件上升一级</span>
+    </div>
+    <div class="dzg5a">
+        <input class="radio" id="item5" type="checkbox"  value="选项二">
+        <label for="item5"></label>
+         <span>到店签到 ，无条件上升一级</span>
+    </div>
+     <div class="dzg5a">
+        <input class="radio" id="item6" type="checkbox"  value="选项二">
+        <label for="item6"></label>
+        <span>到店签到 ，无条件上升一级</span>
+    </div>
+     <div class="dzg5a">
+        <input class="radio" id="item7" type="checkbox"  value="选项二">
+        <label for="item7"></label>
+        <span>到店签到 ，无条件上升一级</span>
+    </div>
+
+    </div></div>
+	</div>
+    	
+    
+    	<div class="zza" style="color: black;width: 50%;height: 100%;border-top: 0.08rem solid #EBEBEB;">
+    		<div class="boxx">
+				<a href="javascript:;" class="flipInX" style="text-decoration: none;">
+				<div class="yuanzcb" style="color: black;border: 0;width: 100%;line-height: 2rem;">确定</div>
+				</a>
+				</div>
+    	</div>
+    	
+    	 </form>
+    	<a>
+    	<div class="zzb" style="color: black;border-right:0 ;border-top: 0.08rem solid #EBEBEB;">
+    		取消
+    	</div>
+    	</a>
+    	</div>
+    </div>
+</div>
+
+</div>
+ <div id="dialogBgx"></div>
+		<div id="dialogx" class="animatedx">
+			<div class="dialogTopx"></div>
+				<div class="yztx2">
+					是否结束服务？
+				</div>
+				
+				<div class="yztx3">
+					<div class="yztx3a">确定</div>
+					<a href="javascript:;" class="claseDialogBtnx">
+					<div class="yztx3b">取消</div>
+					</a>
+				</div>
+		           </div>
+
+</body>
+
+<script>  
+    //  第一种方式 对悬浮窗的设置  
+    function validatelt(inputelement,err){  
+        if(inputelement.validity.patternMismatch){  
+            inputelement.setCustomValidity(err);  
+
+        }else{  
+            inputelement.setCustomValidity("");  
+            return true;  
+        }  
+    }  
+</script>  
+
+<script>
+
+var w,h,className;
+function getSrceenWH(){
+	w = $(window).width();
+	h = $(window).height();
+	$('#dialogBgx').width(w).height(h);
+}
+
+window.onresize = function(){  
+	getSrceenWH();
+}  
+$(window).resize();  
+
+$(function(){
+	getSrceenWH();
+	
+	//显示弹框
+	$('.boxx a').click(function(){
+		className = $(this).attr('class');
+		$('#dialogBgx').fadeIn(300);
+		$('#dialogx').removeAttr('class').addClass('animatedx '+className+'').fadeIn();
+	});
+	
+	//关闭弹窗
+	$('.claseDialogBtnx').click(function(){
+		$('#dialogBgx').fadeOut(300,function(){
+			$('#dialogx').addClass('bounceOutUp').fadeOut();
+		});
+	});
+});
+
+</script>
+
+
+<!--多选取消-->
+
+
+<script>
+    var radio = document.querySelectorAll('.radio');
+
+    radio.forEach(function(r) {
+      var isChecked = false
+
+      r.addEventListener('click', function () {
+        if (this.checked === true && isChecked === false) {
+          isChecked = true
+        } else {
+          this.checked = false
+          isChecked = false
+        }
+      })
+    })
+  </script>
+
+
+
+</html>

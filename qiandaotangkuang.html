@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>签到弹框</title>
+<link rel="stylesheet" type="text/css" href="css/index.css"/>
+<link rel="stylesheet" href="css/reset.css"> 
+<link rel="stylesheet" href="css/stylew.css"> 
+<link rel="stylesheet" href="css/styley.css">
+<link rel="stylesheet" href="css/styleyy.css">
+
+<link rel="prerender" href="http://test.520uedCDN.com"> <!-- chrome --> 
+<style>
+	#modal {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 9999999;
+}
+
+#modal .mask {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: #000;
+	opacity: .1;
+}
+
+#mask {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, .3);
+	z-index: 999;
+}
+
+.zhezhao {
+	z-index: 9999999;
+	position: fixed;
+	width: 13rem;
+	height: 5rem;
+	float: left;
+	background: white;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 20%;
+	border-radius: 0.25rem;
+	border: 0rem;
+}
+
+.zhezha {
+	z-index: 9999999;
+	position: fixed;
+	width: 13rem;
+	height: 4rem;
+	float: left;
+	background: white;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 20%;
+	border-radius: 0.25rem;
+	border: 0rem;
+}
+
+.zhezhao h1 {
+	font-size: 0.9rem;
+	text-align: center;
+	font-weight: 540;
+	margin-top: 0.5rem;
+	color: #007AFF;
+}
+
+
+
+.wen {
+	width: 90%;
+	margin-left: 0.5rem;
+	float: left;
+	margin-top: 0.5rem;
+	text-align: left;
+	font-size: 0.7rem;
+	height: 1rem;
+	text-align: center;
+}
+
+.zhebao1 {
+	width: 50%;
+	height: 1.5rem;
+	float: left;
+	margin-top: 0.5rem;
+	font-size: 0.7rem;
+	text-align: center;
+	line-height: 1.5rem;
+	color: black;
+ border-right:0.05rem solid #EBEBEB ;
+	border-top: 0.05rem solid #EBEBEB;
+}
+
+.zhebao2 {
+	width: 50%;
+	height: 1.5rem;
+	float: right;
+	margin-top: 0.5rem;
+	font-size: 0.7rem;
+	text-align: center;
+	line-height: 1.5rem;
+	color: black;
+	border-top: 0.05rem solid #EBEBEB;
+}
+</style>
+
+</head>
+<body onmousewheel="return false;" >
+<div id="pgcontainer">
+<div id="modal" >
+    <div class="mask" >
+  <!--头部的开始-->
+ 
+  
+   
+    <div class="overlay"></div>
+ 
+  <!--头部的结束-->
+  
+  <!--主题内容的开始-->
+ 
+
+
+
+<!--底部的结束-->
+<!--footer开始-->
+
+    
+
+			
+    
+</div>
+
+ </div>
+    <!-- 这里开始才是真正的内容 -->
+    <div class="dialog">
+    	<div class="zhezhao">
+    		<h1>签到成功</h1>
+    		
+    		<div class="wen">
+    签到时间：2017-04-02  14:20
+    		</div>
+    		
+    		<div class="zhebao1">确定</div>
+    		<div class="zhebao2">出勤记录</div>
+    	</div>
+    </div>
+
+
+<!--footer结束-->
+
+</div>
+
+
+</body>
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script>
+<!--顶部右侧点击向左移动js-->
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/TouchSlide.1.1.js"></script>
+<script type="text/javascript">
+TouchSlide({ 
+	slideCell:"#slides",
+	titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+	mainCell:".bd ul", 
+	effect:"leftLoop", 
+	autoPage:true,//自动分页
+	autoPlay:false //自动播放
+});
+</script>
+
+    <script>
+        var list = document.getElementsByTagName('input');
+        for(let i = 0;i<list.length;i++) {
+            list[i].addEventListener('click',function() {
+                for(let i=0;i<list.length;i++) {
+                    list[i].removeAttribute('class');
+                }
+                this.setAttribute('class','on')
+            })
+        }
+    </script>
+    <script type="text/javascript">
+			//弹出垂直菜单
+			$(".menu").click(function() {
+				if($(this).hasClass("cura")) {
+					$(this).children(".new-sub").hide(); //当前菜单下的二级菜单隐藏
+					$(".menu").removeClass("cura"); //同一级的菜单项
+				} else {
+					$(".menu").removeClass("cura"); //移除所有的样式
+					$(this).addClass("cura"); //给当前菜单添加特定样式
+					$(".menu").children(".new-sub").slideUp("fast"); //隐藏所有的二级菜单
+					$(this).children(".new-sub").slideDown("fast"); //展示当前的二级菜单
+				}
+			});
+		</script>
+		
+</html>

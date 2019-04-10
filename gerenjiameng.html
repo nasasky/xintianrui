@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<title>个人加盟申请</title>
+		<link rel="stylesheet" type="text/css" href="css/gongsijiameng.css" />
+		<link rel="stylesheet" href="css/anquanbaozhang.css" />
+		<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+	</head>
+
+	<body>
+
+		<header>
+			<a class="fanhui" href="#"></a>
+			<strong>加盟申请</strong>
+			<a href="#" class="menubtn"></a>
+
+		</header>
+		<div class="first" style="width: 90%;margin-left: 5%;margin-top: 1rem;">
+			<a href="gongsijiameng.html">
+				<div class="gja1">
+					<h1>公司加盟</h1>
+				</div>
+			</a>
+			<div class="gja1x">
+				<h1>个人加盟</h1>
+			</div>
+		</div>
+
+		<div class="gja2">
+			<form>
+				<p><span> 姓    名：<input id="text" placeholder="请输入你的的姓名"  required /></span></p>
+				<p><span> 联系地址：<input id="text" placeholder="请输入你的联系地址" required /></span></p>
+                <p><span> 联系电话：<input id="text" placeholder="请输入你的联系电话" required /></span></p>
+				<p><span> 太赫设备：<input id="text" placeholder="请输入你要加盟的设备数量" required /></span></p>
+				<span> 加盟原因：
+    	<textarea id="text" placeholder="请输入您想加盟的原因" required ></textarea></span>
+				<div class="gjb" style="margin-top:0rem;height: 5rem;width: 90%;margin-left: 5%;margin-bottom: 2rem;">
+					<a>
+						<h1 style="color: black;font-weight: 200;font-size: 0.7rem;margin-top: 0.5rem;">身份证:<span style="color: #EBEBEB;font-size: 0.4rem;">请上传正面, 反面照片</span></h1></a>
+					<div id="addCommodityIndex">
+						<!--input-group start-->
+						<div class="input-group row">
+
+							<div class="col-sm-9 big-photo">
+								<div id="preview">
+									<div class="xx" onclick="$('#previewImg').click();">
+										<a>身份证正面</a>
+										<p>点击上传</p>
+										<p>jpg/png格式</p>
+									</div>
+
+								</div>
+
+								<div id="previe">
+									<div class="x" onclick="$('#previewIm').click();">
+										<a>身份证反面</a>
+										<p>点击上传</p>
+										<p>jpg/png格式</p>
+									</div>
+								</div>
+
+								<div id="previ">
+									<div class="y" onclick="$('#previewI').click();">
+										<a>手持身份证照片</a>
+										<p>点击上传</p>
+										<p>jpg/png格式</p>
+									</div>
+								</div>
+
+							</div>
+							<input type="file" onchange="previewImage(this)" style="display: none;" id="previewImg">
+							<input type="file" onchange="previewImag(this)" style="display: none;" id="previewIm">
+							<input type="file" onchange="previewIma(this)" style="display: none;" id="previewI">
+							<!--<input id="uploaderInput" class="uploader__input" style="display: none;" type="file" accept="" multiple="">-->
+						</div>
+
+					</div>
+				</div>
+
+		</div>
+		<div  class="db">
+			<input id="button" type="submit" value="提交申请" style="float: left;color:white;font-size: 0.75rem; background: #2576C8;width: 90%;margin-left: 5%;border-radius:0.5rem ;height: 100%;">
+
+		</div>
+		</form>
+		<div class="last" style="width: 100%;height: 2rem;background: #EBEBEB;float: left;"></div>
+
+	</body>
+	<script type="text/javascript" src="js/gerentupian.js"></script>
+
+</html>

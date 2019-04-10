@@ -1,0 +1,258 @@
+@charset "utf-8";
+/* CSS Document */
+/*全局样式*/
+body { font-family:"微软雅黑"; font-size:12px; color:#333;}
+* { margin:0px; padding:0px; list-style:none;}
+
+
+html {
+    font-size : 20px;
+}
+@media only screen and (min-width: 401px){
+    html {
+        font-size: 25px !important;
+    }
+}
+@media only screen and (min-width: 428px){
+    html {
+        font-size: 26.75px !important;
+    }
+}
+@media only screen and (min-width: 481px){
+    html {
+        font-size: 30px !important; 
+    }
+}
+@media only screen and (min-width: 569px){
+    html {
+        font-size: 35px !important; 
+    }
+}
+@media only screen and (min-width: 641px){
+    html {
+        font-size: 40px !important; 
+    }
+}
+
+.clear { clear:both;}
+
+.fl { float:left;}
+.fr { float:right; }
+ul { list-style:none; margin:0px; padding:0px;}
+img { border:0px; max-width:100%;}
+.dbgao { height:80px;}
+
+
+关于我们
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;vertical-align:baseline;outline:0;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+html{overflow-y:scroll}
+/* page structure */
+header{display:block;width:100%;height:55px;text-align:center;}
+header strong {font-size:1rem; color:#FFF; line-height:55px;color: black; font-weight: 100;}
+.menubtn{position:relative;z-index:101;text-decoration:none;background-image:url(../images/nav.png);background-position: center center; background-repeat:no-repeat; width:30px; height:55px; float:right;  margin-right:10px;}
+a.fanhui { width:20px; height:55px; float:left; margin-left:10px; background:url(../images/back.png) no-repeat center;}
+
+.zymain { width:100%; height:auto;}
+.zybt {position:relative;max-width:640px;overflow:hidden;/*max-height:320px;*/margin:0px auto;margin-top: 0.5rem;}
+
+  
+
+
+/*店铺信息后台*/
+label {
+	display: inline;
+}
+
+.regular-checkbox {
+	display: none;
+}
+
+.regular-checkbox + label {
+	background-color: #fafafa;
+	border: 1px solid #cacece;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 9px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+}
+
+.regular-checkbox + label:active, .regular-checkbox:checked + label:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.regular-checkbox:checked + label {
+	background-color:  #2476C8;
+	border: 1px solid #adb8c0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #99a1a7;
+}
+
+.regular-checkbox:checked + label:after {
+	content: '\2714';
+	font-size: 1rem;
+	position: absolute;
+	top: -1px;
+	left: 2px;
+	color:white;
+}
+
+
+.big-checkbox + label {
+	padding: 0.5rem;
+	border-radius:50% ;
+}
+
+.big-checkbox:checked + label:after {
+	font-size: 0.7rem;
+	left: 5px;
+}
+.dxin{
+	float: left;width: 90%;margin-left: 5%;height: 1.2rem;border-bottom:0.05rem solid #EBEBEB ;
+}
+.dxin h1{
+	 float: left; font-size: 0.7rem;color: black;font-weight: 300;
+}
+.dxin h2{
+	float: left;font-size: 0.7rem;color: black;font-weight: 300;
+}
+.dxin1{
+	border-bottom: 0.05rem solid #EBEBEB; float: left;width: 90%;margin-left: 5%;
+}
+.dxin1a{
+	width: 3.5rem;
+	height: 2rem;
+	float: left;
+	font-size: 0.7rem;
+	margin-bottom: 0.5rem;
+}
+.dxin1b{
+	width: 10rem;
+	font-size: 0.7rem;
+	line-height: 0.8rem;
+	float: left;
+   margin-bottom: 0.5rem;
+}
+.dpxh{
+	 width: 90%;margin-left: 5%;float: left;
+}
+.ip{
+	font-size: 0.7rem;  height: 1.5rem;width: 100%;border-bottom: 0.05rem  solid #EBEBEB;margin-top: 0.25rem;border: 0;
+}
+.dxin2{
+	float: left;width: 90%;margin-left: 5%;height:2rem;border-bottom:0.05rem solid #EBEBEB ;
+}
+.dxind{
+	width: 11rem;float: left;margin-left: 3.5rem; height:2rem;position: absolute;
+}
+.dxin2 h1{
+	float: left; font-size: 0.7rem;color: black;font-weight: 300;
+}
+.dxind h2{
+	 float: left;font-size: 0.7rem;color: black;font-weight: 300;text-align: left;
+}
+.dxin3{
+	float: left;width: 90%;margin-left: 5%;height: 1.5rem;border-bottom:0.05rem solid #EBEBEB ;
+}
+.dxin3 h1{
+	 float: left; font-size: 0.7rem;color: black;font-weight: 300;line-height: 1.5rem;
+}
+.dxin3 h2{
+	float: left;font-size: 0.7rem;color: black;font-weight: 300;line-height: 1.5rem;
+}
+.dxin4{
+	float: left;width: 90%;margin-left: 5%;height: 1.5rem;border-bottom:0.05rem solid #EBEBEB ;
+}
+.dxin4 h1{
+	 float: left; font-size: 0.7rem;color: black;font-weight: 300;line-height: 1.5rem;
+}
+.dxin4 h2{
+	float: left;font-size: 0.7rem;color: black;font-weight: 300;line-height: 1.5rem;
+}
+.dpx{
+	width: 100%;float: left;height: 3rem;margin-top: 0.5rem;
+}
+.dpx h1{
+	font-size: 0.8rem;font-weight: 400;
+}
+.dianpulei{
+	 width: 90%;margin-left: 5%;float: left;height: 1rem;margin-top: 0.5rem;
+}
+.dpxb{
+	 font-size: 0.8rem;margin-top: 0.5rem;
+}
+.dpxb textarea{
+	 font-size: 0.75rem; height: 3rem;width: 100%;border-radius:0.25rem ;border: 0.05rem  solid #EBEBEB;margin-top: 0.5rem;
+}
+.dpxb1{
+	  font-size: 0.8rem;margin-top: 0.5rem;
+}
+.dpxb1 input{
+	 font-size: 0.7rem; height: 1.5rem;width: 100%;border-radius:0.25rem ;border: 0.05rem  solid #EBEBEB;margin-top: 0.5rem;
+}
+.dpxx input{
+	 font-size: 0.7rem; height: 1.5rem;width: 100%;border-radius:0.25rem ;border: 0.05rem  solid #EBEBEB;margin-top: 0.5rem;
+}
+.dpxx{
+	font-size: 0.8rem;margin-top: 0.5rem;
+}
+.dxt{
+	font-size: 0.7rem; width: 100%;height: 2rem;margin-top: 1rem;float: left;border-radius:0.25rem ;border: 0rem;background: #2476C8;color: white;font-size: 0.75rem;
+}
+.ip-border{
+	 float: left;width: 100%;height: 100%;border-bottom: 0.05rem  solid #EBEBEB;
+}
+.ip-borderx{
+	 float: left;width: 100%;height: 100%;margin-top: 0.5rem; border: 0.05rem  solid #EBEBEB;border-radius:0.25rem ;
+}
+.ip-border textarea{
+	float: left;
+	width: 100%;
+	height: 3.5rem;
+	border: 0;
+	margin-top: 2%;
+	text-align: left;
+	color: black;
+	font-size: 0.8rem;
+}
+.ip-borderx textarea{
+	float: left;
+	width: 100%;
+	height: 3.5rem;
+	border: 0;
+	margin-top: 2%;
+	text-align: left;
+	color: black;
+	font-size: 0.8rem;
+}
+.ip-border input{
+	float: left;
+	width: 100%;
+	height: 1.7rem;
+	border: 0;
+	font-size: 0.75rem;
+}
+.ip-right{
+	float: right;
+	height: 100%;
+	width: 1.7rem;
+	
+	margin-right: 5%;
+}
+.ip-right img{
+	float: left;
+	width: 100%;
+	height:100%
+}
+.ip-gu{
+	float: left;
+	height: 100%;
+	width: 30%;
+	
+}
+.ip-gu p{
+	float: left;
+	line-height: 1.7rem;
+   font-size: 0.8rem;
+   
+}

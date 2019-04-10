@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<title>添加更多地址</title>
+		<link rel="stylesheet" type="text/css" href="css/tianjiaxindizhi.css" />
+		<link rel="stylesheet" href="css/LArea.css">
+	</head>
+
+	<body>
+		<div id="pgcontainer">
+	<form action="#">
+			<!--头部的开始-->
+			<header>
+				<a class="fanhui" href="changyongdizhi.html"></a>
+				<strong style="margin-right: 40%;">添加新地址</strong>
+				<a  class="mend">
+					<input type="submit"  value="保存" style="line-height: 35px; background: none; color: #2476C8;width:100%;height:100%;font-size: 0.9rem;">
+				</a>
+       
+								
+							
+			<!--头部的结束-->
+<div class="tjza1"></div>
+			<!--主题内容的开始-->
+			<div class="zymain">
+				<div class="zybt">
+					
+					<div style="width: 90%;margin-left: 5%;float: left;">
+		
+				
+							<div class="tjdz">
+								<p style="width: 36%;">姓名：<label><input type="text" name=""  required="required" pattern="[\u4e00-\u9fa5]{2,5}" placeholder="" oninvalid="setCustomValidity('真实姓名必须是中文，且长度不小于2，不大于5')"  oninput="setCustomValidity('')"></label></p>
+							    <p style="width: 52%;">电话：<label><input style="width: 65%;" type="tel" name="" required="required" maxlength="11"  pattern="^(0|86|17951)?1[0-9]{10}" placeholder="" oninvalid="setCustomValidity('请输入11位手机号码')" oninput="setCustomValidity('')"></label>
+							    	
+							    </p>
+							  <img src="images/people_list.png"  style="margin-top: 0.5rem;float: right;"/>
+							</div>
+
+							
+
+							<div class="tjza">
+								<div class="content-block">
+									<p style="width: 100%;">选择省市区：
+										<input id="demo1" style="width: 53%;color: #757575;text-align: right;" type="text" readonly="" placeholder="" value="">
+									<i class="iconfont" style="height: 1.5rem;float: right;">&#xe753;</i>	
+										<input id="value1" type="hidden" value="20,234,504">
+									</p>
+								</div>
+							</div>
+							
+							
+							<p>详细地址：<label><input style="width: 60%;"  required="required"   placeholder="" oninvalid="setCustomValidity('请输入你的详细地址')" oninput="setCustomValidity('')"></label></p>
+							
+						</form>
+						
+						
+					</div>
+
+				</div>
+
+			</div>
+			<!--主题内容的结束-->
+
+			<!--底部的开始-->
+
+			<!--footer开始-->
+
+			<!--footer结束-->
+
+		</div>
+		<script src="js/LAreaData1.js"></script>
+		<script src="js/LAreaData2.js"></script>
+		<script src="js/LArea.js"></script>
+		<script>
+			var area1 = new LArea();
+			area1.init({
+				'trigger': '#demo1', //触发选择控件的文本框，同时选择完毕后name属性输出到该位置
+				'valueTo': '#value1', //选择完毕后id属性输出到该位置
+				'keys': {
+					id: 'id',
+					name: 'name'
+				}, //绑定数据源相关字段 id对应valueTo的value属性输出 name对应trigger的value属性输出
+				'type': 1, //数据源类型
+				'data': LAreaData //数据源
+			});
+		</script>
+		<script>
+			//  第一种方式 对悬浮窗的设置  
+			function validatelt(inputelement, err) {
+				if(inputelement.validity.patternMismatch) {
+					inputelement.setCustomValidity(err);
+
+				} else {
+					inputelement.setCustomValidity("");
+					return true;
+				}
+			}
+		</script>
+
+	</body>
+	
+
+</html>

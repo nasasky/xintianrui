@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>会员升级详情后台</title>
+<link rel="stylesheet" type="text/css" href="css/gerenjiamenghou.css"/>
+
+</head>
+<body>
+<div id="pgcontainer">
+
+  <!--头部的开始-->
+  <header style="background: white;"> 
+  <a class="fanhui" href="huiyuanshengjiliebiao.html"></a>
+  <strong>会员升级详情--张小明</strong>
+  <a href="#" class="menubt"></a> 
+    
+  </header>
+  <!--头部的结束-->
+  
+  <!--主题内容的开始-->
+  <div class="zymain">
+    <div class="zybt">
+    	
+<div class="gsa" style="width: 100%;margin-left: 0;">
+	<div class="gsa1">
+		<ul>
+			<li style="line-height: 2.5rem;">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：<a style="font-size: 0.7rem;color: black;">张三</a>
+		
+			</li>
+
+			
+			<li style="line-height: 2.5rem;border: 0rem;">出生日期：<a>2018/06/01</a></li>
+			
+		
+		</ul>
+	
+	</div>
+	
+	<div class="x"></div>
+	<div class="gsl">
+		<a>
+			<h1 style="font-size:0.75rem;font-weight:400;">身份证凭证：</h1>
+		</a>
+		<div class="gsl1">
+			<img id="myImg"  src="images/zz.jpg"  >
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">×</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+		</div>
+		
+	<div class="gsl2">
+			<img id="myImgx"  src="images/zz.jpg">
+
+<!-- The Modal -->
+<div id="myModalx" class="modalx">
+  <span class="closex">×</span>
+  <img class="modal-contentx" id="img02">
+  <div id="captionx"></div>
+</div>
+		</div>
+		
+		
+		<div class="gsl2">
+			<img id="myImgxx"  src="images/zz.jpg">
+
+<!-- The Modal -->
+<div id="myModalxx" class="modalxx">
+  <span class="closexx">×</span>
+  <img class="modal-contentxx" id="img03">
+  <div id="captionxx"></div>
+</div>
+	</div>
+			
+		
+	</div>
+	
+<button class="sj">确认升级</button>	
+	
+	
+</div>
+				
+				
+
+    </div>
+    
+  </div>
+ 
+
+<div class="lfooter" style="width: 100%;height: 2rem;float: left;"></div>
+
+<!--footer结束-->
+
+</div>
+
+
+
+</body>
+<script>
+// 获取模态窗口
+var modal = document.getElementById('myModal');
+
+// 获取图片模态框，alt 属性作为图片弹出中文本描述
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+}
+
+// 获取 <span> 元素，设置关闭模态框按钮
+var span = document.getElementsByClassName("close")[0];
+
+// 点击 <span> 元素上的 (x), 关闭模态框
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+
+
+var modal = document.getElementById('myModalx');
+
+// 获取图片模态框，alt 属性作为图片弹出中文本描述
+var img = document.getElementById('myImgx');
+var modalImg = document.getElementById("img02");
+var captionText = document.getElementById("captionx");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+}
+
+// 获取 <span> 元素，设置关闭模态框按钮
+var span = document.getElementsByClassName("closex")[0];
+
+// 点击 <span> 元素上的 (x), 关闭模态框
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+
+
+
+var modal = document.getElementById('myModalxx');
+
+// 获取图片模态框，alt 属性作为图片弹出中文本描述
+var img = document.getElementById('myImgxx');
+var modalImg = document.getElementById("img03");
+var captionText = document.getElementById("captionxx");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+}
+
+// 获取 <span> 元素，设置关闭模态框按钮
+var span = document.getElementsByClassName("closexx")[0];
+
+// 点击 <span> 元素上的 (x), 关闭模态框
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+
+
+</script>
+
+</html>

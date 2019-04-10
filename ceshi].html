@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+
+<script src="js/jquery-1.9.1.js"></script>
+
+<script src="js/jquery.cityselect.js"></script>
+
+<script>
+	$(document).ready(function() {
+		 $("#city").citySelect({
+				prov: "广东省",
+				city: "中山市",
+				dist: "石歧区",
+				nodata: "none"
+			});
+		
+	});
+
+ </script>
+	</head>
+	<body>
+<div class="jb" style="width: 100%;height: 1.7rem;background: #F5F4F9;">
+   <div id="dreg">
+      <div class="regitem1">
+		<div id="city">  
+		  <select class="prov" ></select>   
+		  <select class="city"  disabled="disabled"></select>  
+		  <!--<select class="dist" disabled="disabled"></select>  -->
+	
+		</div>
+		</div>
+    </div>
+   </div>
+	</body>
+</html>

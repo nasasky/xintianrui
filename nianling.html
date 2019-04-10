@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<title>更换年龄</title>
+		<link rel="stylesheet" type="text/css" href="css/tianjiaxindizhi.css" />
+		<link rel="stylesheet" href="css/LArea.css">
+	</head>
+<style>
+	.mi{
+		line-height: 35px;height: 100%; background: none; color: #2476C8;width:100%;font-size: 0.9rem;
+	}
+	.tjdz input{
+		width: 100%;
+		height: 90%;
+		line-height: 0;
+		margin: 0;
+	}
+</style>
+	<body>
+		<div id="pgcontainer">
+	<form action="#">
+			<!--头部的开始-->
+			<header>
+				<a class="fanhui" href="huiyuanxinxi.html"></a>
+				<strong style="margin-right: 40%;">更换年龄</strong>
+				<a  class="mend">
+					<input type="submit"  value="保存" class="mi" ></a>
+       
+								
+							
+			<!--头部的结束-->
+<div class="tjza1"></div>
+			<!--主题内容的开始-->
+			<div class="zymain">
+				<div class="zybt">
+					
+					<div style="width: 90%;margin-left: 5%;float: left;">
+		
+				
+							<div class="tjdz" style="width: 100%;height: 2rem;border-bottom:0.05rem solid #0069AD;">
+								<label>
+									<input type="text" name="" value="18"  required="required" pattern="[\u4e00-\u9fa5]{2,5}" placeholder="" oninvalid="setCustomValidity('真实姓名必须是中文，且长度不小于2，不大于5')"  oninput="setCustomValidity('')">
+								</label>
+								
+								
+								
+								
+							    
+							</div>
+
+							
+
+						
+							
+							
+							
+						</form>
+						
+						
+					</div>
+
+				</div>
+
+			</div>
+			<!--主题内容的结束-->
+
+			<!--底部的开始-->
+
+			<!--footer开始-->
+
+			<!--footer结束-->
+
+		</div>
+		
+		<script>
+			//  第一种方式 对悬浮窗的设置  
+			function validatelt(inputelement, err) {
+				if(inputelement.validity.patternMismatch) {
+					inputelement.setCustomValidity(err);
+
+				} else {
+					inputelement.setCustomValidity("");
+					return true;
+				}
+			}
+		</script>
+
+	</body>
+	
+
+</html>

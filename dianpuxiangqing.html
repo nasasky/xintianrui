@@ -1,0 +1,474 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>选择预约时间</title>
+<link rel="stylesheet" type="text/css" href="css/bangjucenter.css"/>
+<link rel="stylesheet" type="text/css" href="css/jishixiangqing.css"/>
+<link rel="stylesheet" href="css/swiper.min.css">
+<script src="js/jquery-3.3.1.min.js"></script>
+<style>
+.hour1 li{cursor:pointer;width: 22%;float: left;background: #EBEBEB; border: 0.05rem solid #EBEBEB; height: 2rem;list-style: none;margin-left: 2.2%;margin-top:10px;text-align: center;}
+
+.xqiu{background:white;color:blue; list-style: none;}
+.qiu{background:white;color:blue; list-style: none;}
+.az{
+	font-size: 0.7rem;
+}
+.azx{
+	color: blue;
+}
+.hour1 li p{
+	font-size: 0.55rem;
+	
+}
+</style>
+
+<script type="text/javascript">
+
+window.onload = function ()
+
+{
+
+var aLi = document.getElementsByTagName("li");
+
+var i = 0;
+
+for (i = 0; i < aLi.length; i++)
+
+{
+
+aLi[i].onclick = function ()
+
+{
+
+for (i = 0; i < aLi.length; i++) aLi[i].className = aLi[i].className.replace(/\s?xqiu/,"");
+
+this.className += "xqiu";
+
+};
+
+}
+
+};
+
+</script>
+</head>
+<body>
+<div id="pgcontainer">
+
+  <!--头部的开始-->
+  <header> 
+  <a class="fanhui" href="yuyuedaodian.html"></a>
+  <strong style="font-size: 0.8rem;">中山市睿太理疗旗舰店No:1</strong>
+  <a href="index.html" class="menubtn"></a> 
+    
+  </header>
+  <!--头部的结束-->
+  
+  <!--主题内容的开始-->
+  <div class="zymain">
+    <div class="zybt">
+    	<div id="slides" class="slider-focus">
+    <div class="bd">
+      <ul>
+       <li><a class='pic' href="#"><img src="images/a2.jpg" /> </a></li>
+       <li><a class='pic' href="#"><img src="images/a2.jpg" /> </a></li> 
+       <li><a class='pic' href="#"><img src="images/a2.jpg" /> </a></li>
+      </ul>
+    </div>
+    <div class="hd">
+      <ul>
+      </ul>
+    </div>
+  </div>  	   
+
+
+
+<div class="dpa" style="width: 95%;float: left;margin-left: 2.5%;margin-top: 0.5rem;">
+	<div class="zy" style="width: 100%;height: 1.5rem;">
+	 <h3 class="title"><span>内容服务价格</span></h3>
+				<div class="xq5b">
+								<table border="1" cellspacing="0">
+
+									<tr align="center" style="font-size: 0.7rem;">
+										<td height="40px">服务时间</td>
+										<td>原价</td>
+										<td>优惠价</td>
+										
+
+									</tr>
+									<tr align="center" style="font-size: 0.7rem;">
+										<td height="40px">60分钟</td>
+										<td>600元</td>
+										<td></td>
+
+									</tr>
+									<tr align="center" style="font-size: 0.7rem;">
+										<td height="40px">120分钟</td>
+										<td>1100元</td>
+										<td></td>
+
+									</tr>
+									<tr align="center" style="font-size: 0.7rem;">
+										<td height="40px">180分钟</td>
+										<td>1500元</td>
+										<td></td>
+
+									</tr>
+									<tr align="center" style="font-size: 0.7rem;">
+										<td height="40px">240分钟</td>
+										<td>1800元</td>
+										<td></td>
+
+									</tr>
+									<tr align="center" style="font-size: 0.7rem;">
+										<td height="40px">300分钟</td>
+										<td>2000元</td>
+										<td></td>
+
+									</tr>
+
+									<tr style="width: 100%;">
+										<td colspan="4"  style="height: 7.5rem;">
+											<div class="table1" style="width: 100%;height:6rem;margin-top:0.5rem;color: black;text-align: left; float: left;font-size: 0.7rem;line-height: 1rem;">
+												<a><span style="float: left;">
+            			1、一次性充值5小时以上部分理疗时间每小时200元。
+            		</span></a>
+												<a><span style="float: left;">
+            			2、60岁及以上的老人永久享受200元每小时的优惠。
+            		</span></a>
+												<a><span style="float: right;">
+            			3、特殊优惠周期内，一次性充值2000元以上获得5小时理疗时间的VIP会员，终身享受200元 每小时的理疗优惠。
+            		</span></a>
+											</div>
+										</td>
+
+									</tr>
+								</table>
+							</div>
+</div>
+</div>
+    	
+
+<!--
+	 注意tab后六天轮播时间选择在js中，不在html页
+-->
+			<!-- 代码 开始 -->
+<div v-cloak id="popup" @click="popupHide">
+	<div class="overlay"></div>
+	<div class="content">
+		<section class="srv-time-selector" v-show="switchShow">
+			
+			<div class="bd">
+				<div class="header">
+					<div class="data-picker">
+						<div class="wrapper">
+							<button v-for="(date, index) in dates.nowMonth" :id="'scroll-' + index" :class="[{current: date.current}, {'appointment': !date.appointment}]" @click="selectedNow(index, $event)">
+								{{date.month}}-{{date.day}}
+								<span>{{date.week}} </span>
+							</button>
+							<button v-for="(date, index) in dates.nextMonth" :id="'scroll-next-' + index" :class="[{current: date.current}, {'appointment': !date.appointment}]" @click="selectedNext(index, $event)">
+								{{date.month}}-{{date.day}}
+								<span>{{date.week}} </span>
+							</button>
+						</div>
+					</div>
+										
+				</div>
+				
+				
+				
+			
+				<div class="hour">
+					<div class="hour1">
+						
+		<div id="box">
+    <div id="content">
+    	<div id="ee"  style="width: 100%;float: left;">
+     		<ul style="width: 100%;">
+        <li><p class="az">08:00</p><p>可预约：5</p></li>
+
+        <li><p class="az">08:30</p><p>可预约：5</p></li>
+
+         <li><p class="az">09:00</p><p>可预约：5</p></li>
+
+        <li><p class="az">09:30</p><p>可预约：5</p></li>
+         <li><p class="az">10:00</p><p>可预约：5</p></li>
+
+        <li><p class="az">10:30</p><p>可预约：5</p></li>
+         <li><p class="azx">11:00</p><p>预约已满</p></li>
+
+        <li><p class="az">11:30</p><p>可预约：5</p></li>
+
+        
+
+    </ul>
+    </div>
+        <div id="spread">
+        	<div style="float: left;width: 100%;">
+          <ul style="width: 100%;">
+
+        <li><p class="az">14:00</p><p>可预约：5</p></li>
+
+        <li><p class="az">14:30</p><p>可预约：5</p></li>
+
+         <li><p class="az">15:00</p><p>可预约：5</p></li>
+
+       <li><p class="az">15:30</p><p>可预约：5</p></li>
+         
+    </ul>
+    </div>
+        </div>
+    </div>
+    <button id="btn">
+    	<img src="images/button.png" />
+    </button>
+    
+    
+    
+<div style="width: 100%;height: 0.25rem;float: left;background: #EBEBEB;margin-top: 0.5rem;"></div>
+<div class="jsxqb" style="width: 100%;height: 12rem; float: left;margin-top: 0.5rem; ">
+<div class="dpc" style="width: 100%;float: left; margin-top: 0.5rem;height: 12rem;">
+	<h3 class="title"><span>服务技师</span></h3>
+	<div class="dpc1" style="position:relative;max-width:640px;overflow:hidden;/*max-height:320px;*/margin:0px auto;margin-top: 0.5rem;height: 10rem;text-align: center;">
+		  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+    	
+    	
+      <div class="swiper-slide" >
+      	<div class="jsta">
+      	
+        <img src="images/jishi.png" style="width: 100%;height: 100%;" />
+        
+      	</div>
+      	<a href="jishixiangqing.html">
+      	<div class="jst1">
+        <h1>张某</h1>
+        <div class="jst2">
+      	<span>职位:服务经理</span><br />
+        <span>工作状态:可预约</span>
+       </div>
+      	</div>
+      	</a>
+      </div>
+    
+      
+      <div class="swiper-slide">
+      		<div class="jsta">
+      		<a href="index.html">
+      			<img src="images/jishi.png" style="width: 100%;height: 100%;" />
+      		</a>
+      	</div>
+      	<a href="jishixiangqing.html">
+      	<div class="jst1">
+       <h1>李四</h1>
+        <div class="jst2" >
+      	<span>职位:技师</span><br />
+      	<span>工作状态:可预约</span>
+       </div>
+      	</div>
+      	</a>
+      	
+      </div>
+      <div class="swiper-slide">
+      	<div class="jsta">
+      		<a>
+      			<img src="images/jishi.png" style="width: 100%;height: 100%;" />
+      		</a>
+      	</div>
+      	<a href="jishixiangqing.html">
+      	<div class="jst1">
+       <h1>小明</h1>
+        <div class="jst2" style="color: black;">
+      	<span>职位:技师</span><br />
+      	<span>工作状态:<span style="color: #EBEBEB;font-size: 0.5rem;">已约满</span></span>
+       </div>
+      	</div>
+      	</a>
+      	
+      </div>
+      <div class="swiper-slide">
+      	<div class="jsta">
+      		<a>
+      			<img src="images/jishi.png" style="width: 100%;height: 100%;" />
+      		</a>
+      	</div>
+      	<a href="jishixiangqing.html">
+      	<div class="jst1">
+        <h1>李四</h1>
+        <div class="jst2">
+      	<span>职位:技师</span><br />
+      	<span>工作状态:可预约</span>
+       </div>
+      	</div>
+      	</a>
+      	
+      </div>
+      
+      
+      <div class="swiper-slide">
+      	<div class="jsta">
+      		<a>
+      			<img src="images/jishi.png" style="width: 100%;height: 100%;" />
+      		</a>
+      	</div>
+      	<div class="jst1">
+        <h1 >小明</h1>
+        <div class="jst2">
+      <span>职位:技师</span><br />
+      <span>工作状态:可预约</span>
+       </div>
+      	</div>
+      	
+      	
+      </div>
+      <div class="swiper-slide">
+      	<div class="jsta">
+      		<a>
+      			<img src="images/jishi.png" style="width: 100%;height: 100%;" />
+      		</a>
+      	</div>
+      	<a href="#">
+      	<div class="jst1">
+       <h1>李四</h1>
+        <div class="jst2" >
+      	<span>职位:技师</span><br />
+      	<span>工作状态:可预约</span>
+       </div>
+      	</div>
+      </a>
+      	
+      </div>
+      <div class="swiper-slide">
+      		<div class="jsta">
+      		<a>
+      			<img src="images/jishi.png" style="width: 100%;height: 100%;" />
+      		</a>
+      	</div>
+      	<a href="#">
+      	<div class="jst1">
+       <h1>小明</h1>
+        <div class="jst2">
+      <span>职位:技师</span><br />
+      <span>工作状态:可预约</span>
+       </div>
+      	</div>
+      	</a>
+      </div>
+    </div>
+  </div>
+
+	</div>
+</div>	
+ </div>
+ 
+ <div class="dpxian"></div>
+
+
+
+
+
+<div class="dpd">
+	<h3 class="title"><span>案列展示</span></h3>
+	<div class="dpd1">
+		<div class="dpda1">
+			<a>
+				<img src="images/dp1.png" />
+			</a>
+		</div>
+		<div class="dpda1x">
+			<a>
+				<img src="images/dp2.png" />
+			</a>
+		</div>
+		<div class="dpda1y">
+			<a>
+				<img src="images/dp3.png"  />
+			</a>
+		</div>
+	</div>
+	<div class="dpd2x">
+		<div class="dpd3x" >
+			<a>
+				<img src="images/dpd1.png"/>
+			</a>
+		</div>
+		<div class="dpd4x">
+			<a>
+				<img src="images/dpd2.png" />
+			</a>
+		</div>
+		<div class="dpd6">
+			<a>
+				<img src="images/dpd4.png" />
+			</a>
+		</div>
+		<div class="dpd5" >
+			<a>
+				<img src="images/dpd3.png" />
+			</a>
+		</div>
+	</div>
+</div>
+<div style="width: 100%;height: 3rem;float: left;"></div>
+ </div>
+</div>					
+	</div>
+	</div>
+				
+	</div>
+	</section>
+		
+		
+	</div>
+</div>
+	</div>
+    <div style="width: 100%;float: left;height: 3rem;"></div>
+<div class="loofer" style="z-index: 30; height: 2rem;width: 100%;position: fixed;bottom: 0;">
+		<div class="czbutton">
+					<a href="yuyuedaodian.html">
+					<button>立即预约</button>	
+					</a>
+				</div>
+</div>
+  </div>
+ 
+
+</div>
+
+<script src="js/TouchSlide.1.1.js"></script>
+<script src="js/jquery.min.js"></script>	
+<script src="js/vue.min.js"></script>
+<script type="text/javascript" src="js/dianpu.js" ></script>
+</body>
+<script type="text/javascript">
+TouchSlide({ 
+	slideCell:"#slides",
+	titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+	mainCell:".bd ul", 
+	effect:"leftLoop", 
+	autoPage:true,//自动分页
+	autoPlay:false //自动播放
+});
+</script>
+<!-- Swiper JS -->
+  <script src="js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 5,
+      freeMode: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+  
+</html>

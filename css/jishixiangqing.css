@@ -1,0 +1,521 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+/*全局样式*/
+
+body {
+	font-family: "微软雅黑";
+	font-size: 12px;
+	color: #333;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+html {
+	font-size: 20px;
+}
+
+@media only screen and (min-width: 401px) {
+	html {
+		font-size: 25px !important;
+	}
+}
+
+@media only screen and (min-width: 428px) {
+	html {
+		font-size: 26.75px !important;
+	}
+}
+
+@media only screen and (min-width: 481px) {
+	html {
+		font-size: 30px !important;
+	}
+}
+
+@media only screen and (min-width: 569px) {
+	html {
+		font-size: 35px !important;
+	}
+}
+
+@media only screen and (min-width: 641px) {
+	html {
+		font-size: 40px !important;
+	}
+}
+
+h3.title {
+	color: #F2AE11;
+	font-size: 0.7rem;
+	margin-bottom: 0.5rem;
+	text-align: center;
+	font-weight: 500;
+	line-height: 1.1;
+}
+
+h3.title span {
+	display: block;
+	/*设置为块级元素会独占一行形成上下居中的效果*/
+	font-size: 0.8rem;
+	color: #212121;
+	position: relative;
+	/*定位横线（当横线的父元素）*/
+}
+
+h3.title span:before,
+h3.title span:after {
+	content: '';
+	/*CSS伪类用法*/
+	position: absolute;
+	/*定位背景横线的位置*/
+	top: 52%;
+	background: #E6E6E6;
+	/*宽和高做出来的背景横线*/
+	width: 20%;
+	height: 2px;
+}
+
+h3.title span:before {
+	left: 14%;
+	/*调整背景横线的左右距离*/
+}
+
+h3.title span:after {
+	right: 14%;
+}
+
+.clear {
+	clear: both;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+img {
+	border: 0px;
+	max-width: 100%;
+}
+
+.dbgao {
+	height: 80px;
+}
+
+关于我们 a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	outline: 0;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+html {
+	overflow-y: scroll
+}
+
+
+/* page structure */
+
+header {
+	display: block;
+	width: 100%;
+	height: 55px;
+	text-align: center;
+}
+
+header strong {
+	font-size: 1rem;
+	color: #FFF;
+	line-height: 55px;
+	color: black;
+	font-weight: 100;
+	margin-right: 5%;
+}
+
+a.fanhui {
+	text-decoration: none;
+	width: 20px;
+	height: 55px;
+	float: left;
+	margin-left: 10px;
+	background: url(../images/back.png) no-repeat center;
+}
+
+.zymain {
+	width: 100%;
+	height: auto;
+}
+
+.zybt {
+	width: 100%;
+	margin: 10px 0px;
+}
+
+.xq {
+	background: #EEEEEE;
+}
+
+.swiper-container {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	width: 30%;
+	margin-right: 5px;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.jst2 span {
+	font-size: 0.5rem;
+	text-align: left;
+	margin-bottom: 0.5rem;
+	color: black;
+}
+
+.jsta {
+	float: left;
+	width: 4rem;
+	height: 4rem;
+	position: absolute;
+	border-radius: 60%;
+	margin-top: -30%;
+	z-index: 2;
+}
+
+.jst1 {
+	float: left;
+	width: 100%;
+	height: 60%;
+	margin-top: 50%;
+	border: 0.05rem solid #EBEBEB;
+	text-align: center;
+	box-shadow: 0.15px 0.15px 0.15px 0.15px #EEEEEE;
+}
+
+.jst1 h1 {
+	float: left;
+	width: 100%;
+	font-size: 0.7rem;
+	color: black;
+	margin-top: 3rem;
+	font-weight: 500;
+	text-align: center;
+	font-weight: 520;
+}
+
+.jst2 {
+	float: left;
+	width: 100%;
+	margin-top: 0.2rem;
+	height: 1.7rem;
+	color: black;
+}
+
+.jscaq {
+	width: 100%;
+	float: left;
+	margin-top: 0.5rem;
+}
+
+.jscat {
+	width: 2.5rem;
+	height: 2.5rem;
+	float: left;
+	border-radius: 2.5rem;
+	margin: auto;
+	right: 0;
+	left: 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+
+.jscatxw {
+	width: 3rem;
+	height: 3rem;
+	float: left;
+	margin-top: 0.25rem;
+	border-radius: 3rem;
+	position: relative;
+	border: 0.05rem;
+	border: 0.05rem solid #EBEBEB;
+}
+
+.jscatd {
+	width: 3rem;
+	height: 1rem;
+	float: left;
+	margin-left: 0.25rem;
+	font-size: 0.7rem;
+	text-align: center;
+	margin-top: 1rem;
+}
+
+.jscato {
+	width: 2.5rem;
+	height: 1.2rem;
+	float: right;
+	border: 0.025rem solid red;
+	border-radius: 0.25rem;
+	color: red;
+	font-size: 0.65rem;
+	margin-top: 1rem;
+	text-align: center;
+	line-height: 1.2rem;
+	background: white;
+}
+
+.jsctap {
+	width: 100%;
+	float: left;
+	margin-top: 0.5rem;
+	text-align: left;
+	font-size: 0.65rem;
+}
+
+.jscatl {
+	width: 100%;
+	float: left;
+	margin-top: 0.25rem;
+	height: 1rem;
+	margin-bottom: 0.5rem;
+	font-size: 0.6rem;
+	border-bottom: 0.05rem solid #EBEBEB;
+	text-align: left;
+}
+
+.jscz {
+	width: 50%;
+	height: 1.8rem;
+	float: left;
+	margin-left: 25%;
+	border-radius: 0.25rem;
+	border: 0.05rem solid #CACACA;
+	font-size: 0.7rem;
+	line-height: 1.8rem;
+	text-align: center;
+	color: #CACACA;
+}
+
+.jsselect {
+	width: 90%;
+	height: 1.5rem;
+	float: left;
+	margin-left: 5%;
+	margin-top: 0.5rem;
+}
+
+.jsselect li {
+	list-style: none;
+	float: left;
+	line-height: 1.5rem;
+	font-size: 0.7rem;
+}
+
+.jsselect input {
+	width: 1.5rem;
+	height: 1.5rem;
+	border: 0rem;
+	float: left;
+	background: url(../images/checks2.png);
+	background-size: 100% 100%;
+}
+
+.jsselect input.on {
+	background: url(../images/checks1.png);
+	background-size: 100% 100%;
+}
+
+.dpxian{
+	width: 100%;background: #EBEBEB;height: 0.25rem;float: left;margin-top: 0.5rem;
+}
+.dpd{
+	width: 90%;float: left;margin-left: 5%;margin-top: 0.5rem;text-align: center;
+}
+.dpd1{
+	 position:relative;max-width:640px;overflow:hidden;/*max-height:320px;*/margin:0px auto;margin-top: 0.5rem; height: 4.5rem;text-align: center;
+}
+.czbutton {
+	width: 100%;
+	height: 2rem;
+	float: left;
+	
+	
+}
+
+.czbutton button {
+	width: 100%;
+	height: 100%;
+	background: #2476C8;
+	border: 0rem;
+	color: white;
+	font-size: 0.8rem;
+}
+.dpda1{
+	float: left;width: 32%;height: 4.5rem;
+}
+.dpda1x{
+	float: left;width: 32%;height: 4.5rem;margin-left: 1.4%;
+}
+.dpda1y{
+	float: left;width: 32%;height: 4.5rem;margin-left: 1.4%;
+}
+.dpd2x{
+	 position:relative;max-width:640px;overflow:hidden;/*max-height:320px;*/margin:0px auto;margin-top: 0.2rem; height: 11rem;text-align: center;
+}
+.dpd3x{
+	width: 49.2%;height: 7rem;float: left;
+}
+.dpd4x{
+	width:49.2%;float: right;height: 4rem;
+}
+.dpd6{
+	 width: 49.2%;float: right;height: 7rem;margin-top: 0.25rem;
+}
+.dpd5{
+	width: 49.2%;float: left;height: 4rem;margin-top: 0.25rem;
+}
+.dpd5 img{
+	width: 100%;
+	height: 100%;
+}
+.dpd6 img{
+	width: 100%;
+	height: 100%;
+}
+
+.dpd4x img{
+	width: 100%;
+	height: 100%;
+}
+
+.dpd3x img{
+	width: 100%;
+	height: 100%;
+}
+.dpd1y img{
+	width: 100%;
+	height: 100%;
+}
+
+.dpda1 img{
+	width: 100%;
+	height: 100%;
+}
